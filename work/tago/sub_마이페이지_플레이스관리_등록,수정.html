@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tago</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/host.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(function(){
+            $(".datepicker").datepicker();
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <button type="button" class="menu_open">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- 로그인전 -->
+            <div class="m_menu">
+                <button type="button" class="menu_close">
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mlog_area">
+                    <strong class="mlog_name">로그인이 필요합니다.</strong>
+                    <ul class="m_log">
+                        <li><a href="로그인.html" class="log_btn">로그인</a></li>
+                        <li><a href="회원가입.html" class="myp_btn">회원가입</a></li>
+                    </ul>
+                </div>
+                <ul class="m_nav">
+                    <li><a href="sub_지역_리스트(지도).html">지역</a></li>
+                    <li><a href="sub_플레이스.html">플레이스</a></li>
+                    <li><a href="#a">이벤트</a></li>
+                    <li><a href="sub_마이페이지_내정보보기.html">마이페이지</a>
+                        <ul class="m_submenu">
+                            <li><a href="#a">숙소등록</a></li>
+                            <li><a href="#a">숙소목록</a></li>
+                            <li><a href="#a">달력관리</a></li>
+                            <li><a href="#a">후기관리</a></li>
+                            <li><a href="#a">채팅관리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#a">마이페이지</a>
+                        <ul class="m_submenu">
+                            <li><a href="sub_마이페이지_내정보보기.html">내정보 보기</a></li>
+                            <li><a href="sub_마이페이지_내정보수정.html">내정보 수정</a></li>
+                            <li><a href="sub_마이페이지_예약내역.html">예약내역</a></li>
+                            <li><a href="sub_마이페이지_중고물품거래.html">중고물품거래</a></li>
+                            <li><a href="sub_마이페이지_플레이스관리_목록.html">플레이스관리</a></li>
+                            <li><a href="sub_마이페이지_회원탈퇴.html">회원탈퇴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="utility_list">
+                    <li><a href="#a">문의하기</a></li>
+                    <li><a href="#a">회사소개</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">개인정보처리방침</a></li>
+                    <li><a href="#a">도움말</a></li>
+                    <li><a href="#a">이용수칙 및 환불정책</a></li>
+                </ul>
+            </div>
+            <div class="overlay"></div>
+            <!-- //로그인전 -->
+            <!-- 로그인후 -->
+            <!-- <div class="m_menu">
+                <button type="button" class="menu_close">
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mlog_area">
+                    <strong class="mlog_name">홍길동님</strong>
+                    <ul class="m_log log_out">
+                        <li><a href="#a" class="log_btn">로그아웃</a></li>
+                    </ul>
+                </div>
+                <ul class="m_nav">
+                    <li><a href="#a">지역</a></li>
+                    <li><a href="#a">플레이스</a></li>
+                    <li><a href="#a">이벤트</a></li>
+                    <li><a href="#a">호스트</a>
+                        <ul class="m_submenu">
+                            <li><a href="#a">숙소등록</a></li>
+                            <li><a href="#a">숙소목록</a></li>
+                            <li><a href="#a">달력관리</a></li>
+                            <li><a href="#a">후기관리</a></li>
+                            <li><a href="#a">채팅관리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#a">마이페이지</a>
+                        <ul class="m_submenu">
+                            <li><a href="#a">내정보 보기</a></li>
+                            <li><a href="#a">내정보 수정</a></li>
+                            <li><a href="#a">예약내역</a></li>
+                            <li><a href="#a">중고물품거래</a></li>
+                            <li><a href="#a">플레이스관리</a></li>
+                            <li><a href="#a">회원탈퇴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="utility_list">
+                    <li><a href="#a">문의하기</a></li>
+                    <li><a href="#a">회사소개</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">개인정보처리방침</a></li>
+                    <li><a href="#a">도움말</a></li>
+                    <li><a href="#a">이용수칙 및 환불정책</a></li>
+                </ul>
+            </div>
+            <div class="overlay"></div> -->
+            <!-- //로그인후 -->
+           
+            <h1 class="logo"><a href="main.html"><img src="img/tago_logo.png" alt="타고 로고"></a></h1>
+            <ul class="nav">
+                <li><a href="sub_지역_리스트(지도).html"><span>지역</span></a></li>
+                <li><a href="sub_플레이스.html"><span>플레이스</span></a></li>
+                <li><a href="#a"><span>이벤트</a></span></li>
+                <li><a href="sub_마이페이지_내정보보기.html"><span>마이페이지</a></span></li>
+            </ul>
+            <ul class="login">
+                <li><a href="로그인.html">로그인</a></li>
+                <li><a href="회원가입.html">회원가입</a></li>
+            </ul>
+            <button type="button" class="search_btn"><span class="blind">검색</span></button>
+            <div class="search_open">
+                <button type="button" class="menu_close">
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="room_select">
+                    <label for="search_room" class="blind">숙소검색</label>
+                    <input type="text" class="input_custom" id="search_room" placeholder="국내 숙소명 또는 지역명 입력">
+                    <div class="select_date">
+                        <input type="text" class="datepicker date_custom" placeholder="날짜선택">
+                    </div>
+                    <div class="select_custom option_price">
+                        <select name="" id="">
+                            <option value="">인원</option>
+                            <option value="">옵션2</option>
+                            <option value="">옵션3</option>
+                            <option value="">옵션4</option>
+                        </select>
+                    </div>
+                    <div class="select_custom w60">
+                        <select name="" id="">
+                            <option value="">한 달 금액</option>
+                            <option value="">옵션2</option>
+                            <option value="">옵션3</option>
+                            <option value="">옵션4</option>
+                        </select>
+                    </div>
+                    <div class="filter_wrap">
+                        <div class="filter_text">필터</div>
+                        <button type="button" class="room_search">찾아보기</button>
+                        <div class="option_filter">
+                            <strong class="filter_title">필터 <button type="button" class="close_filter"></button></strong>
+                            <div class="filter_list">
+                                <strong class="filter_sub_title">업장 내 시설</strong>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_1" name="fchk1" checked="">
+                                    <label for="fchk1_1">주차가능</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_2" name="fchk1">
+                                    <label for="fchk1_2">픽업가능</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_3" name="fchk1">
+                                    <label for="fchk1_3">공항셔틀</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_4" name="fchk1">
+                                    <label for="fchk1_4">레스토랑</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_5" name="fchk1">
+                                    <label for="fchk1_5">카페</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_6" name="fchk1">
+                                    <label for="fchk1_6">조식운영</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_7" name="fchk1">
+                                    <label for="fchk1_7">바</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_8" name="fchk1">
+                                    <label for="fchk1_8">공용주방</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_9" name="fchk1">
+                                    <label for="fchk1_9">라운지</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_10" name="fchk1">
+                                    <label for="fchk1_10">무료세탁</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_11" name="fchk1">
+                                    <label for="fchk1_11">편의점</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_12" name="fchk1">
+                                    <label for="fchk1_12">키즈룸</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_13" name="fchk1">
+                                    <label for="fchk1_13">피트니스</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_14" name="fchk1">
+                                    <label for="fchk1_14">한옥</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_15" name="fchk1">
+                                    <label for="fchk1_15">독채</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk1_16" name="fchk1">
+                                    <label for="fchk1_16">3D TV</label>
+                                </div>
+                                <a href="#a" class="more">더보기</a>
+                            </div>
+                            <div class="filter_list">
+                                <strong class="filter_sub_title">객실 내 시설</strong>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_1" name="fchk2" checked="">
+                                    <label for="fchk2_1">스파/월풀</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_2" name="fchk2">
+                                    <label for="fchk2_2">욕조</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_3" name="fchk2">
+                                    <label for="fchk2_3">에머니티</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_4" name="fchk2">
+                                    <label for="fchk2_4">칫솔/치약</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_5" name="fchk2">
+                                    <label for="fchk2_5">개별바베큐</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_6" name="fchk2">
+                                    <label for="fchk2_6">노래방</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_7" name="fchk2">
+                                    <label for="fchk2_7">조식포함</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_8" name="fchk2">
+                                    <label for="fchk2_8">PC</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_9" name="fchk2">
+                                    <label for="fchk2_9">TV</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_10" name="fchk2">
+                                    <label for="fchk2_10">프로젝터</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_11" name="fchk2">
+                                    <label for="fchk2_11">흡연가능</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_12" name="fchk2">
+                                    <label for="fchk2_12">장애인</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_13" name="fchk2">
+                                    <label for="fchk2_13">벽난로</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_14" name="fchk2">
+                                    <label for="fchk2_14">세탁기</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_15" name="fchk2">
+                                    <label for="fchk2_15">취사가능</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk2_16" name="fchk2">
+                                    <label for="fchk2_16">화장실2개</label>
+                                </div>
+                                <a href="#a" class="more">더보기</a>
+                            </div>
+                            <div class="filter_list">
+                                <strong class="filter_sub_title">업장 주변 시설</strong>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_1" name="fchk3" checked="">
+                                    <label for="fchk3_1">산책로/등산</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_2" name="fchk3">
+                                    <label for="fchk3_2">수상/레저</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_3" name="fchk3">
+                                    <label for="fchk3_3">맛집</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_4" name="fchk3">
+                                    <label for="fchk3_4">관광지</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_5" name="fchk3">
+                                    <label for="fchk3_5">교통편리</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_6" name="fchk3">
+                                    <label for="fchk3_6">계곡인접</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_7" name="fchk3">
+                                    <label for="fchk3_7">해수욕장</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_8" name="fchk3">
+                                    <label for="fchk3_8">카페</label>
+                                </div>
+
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_9" name="fchk3">
+                                    <label for="fchk3_9">편의점/마트</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_10" name="fchk3">
+                                    <label for="fchk3_10">미술관</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_11" name="fchk3">
+                                    <label for="fchk3_11">박물관</label>
+                                </div>
+                                <div class="filter_checks">
+                                    <input type="checkbox" id="fchk3_12" name="fchk3">
+                                    <label for="fchk3_12">동물원</label>
+                                </div>
+                                <a href="#a" class="more">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- //header -->
+
+        <!-- content -->
+
+        <section class="my_page twodepth_page">
+            <nav class="inner_nav">
+                <ul>
+                    <li>
+                        <a href="#" class="">내 정보 보기</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">내 정보 수정</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">예약내역</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">채팅보기</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">중고물품거래</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">플레이스관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">회원탈퇴</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="host_content my_page">
+                <div class="host_top">
+                    <h3 class="sub_tit">중고물품거래</h3>
+                </div>
+                
+                <ul class="write_box_wrap">
+                    <li>
+                        <label for="inp_t1" class="inp_tit">플레이스 이름</label>
+                        <div class="inp_con">
+                            <div class="form_block slim_type">
+                                <input type="text" class="single_inp full_size" id="inp_t1">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="inp_s1" class="inp_tit">카테고리</label>
+                        <div class="inp_con">
+                            <div class="form_block slim_type auto_size">
+                                <select id="inp_s1" class="tago_select single_inp full_size">
+                                    <option>판매중</option>
+                                    <option>판매완료</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inp_tit">대표이미지</span>
+                        <div class="inp_con upfile_wrap">
+                            <div class="upload_file">
+                                <input type="file" class="file_input" id="inp_f1">
+                                <span class="file_name"></span>
+                            </div>
+                            <div class="upload_btn">
+                                <label for="inp_f1" class="up_btn">파일선택</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="inp_t2" class="inp_tit">내용</label>
+                        <div class="inp_con">
+                            <div class="form_block">
+                                <textarea class="single_inp full_size" id="inp_t2" placeholder="내용을 입력하세요."></textarea>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="inp_g1" class="inp_tit">주소</label>
+                        <div class="inp_con">
+                            <div class="form_block search_block">
+                                <input type="text" class="single_inp" id="inp_g1">
+                                <button type="button" class="btn_green">검색</button>
+                            </div>
+                        </div> 
+                        
+                    </li>
+                    <li>
+                        <span class="inp_tit">추가이미지</span>
+                        <div class="inp_con">
+                            <div class="multiimg_wrap">
+
+                                <div class="upload_info">
+                                    <p>드랍하여 파일 업로드</p>
+                                </div>
+    
+                                <div class="btn_area">
+                                    <button type="button" class="btn_white sm_size">전체선택</button>
+                                    <button type="button" class="btn_white sm_size">삭제</button>
+                                </div>
+    
+                                <div class="multiimg_info">
+                                    <p>여기에 첨부 파일을 끌어오세요. 또는 <button type="button" class="multiimg_upload">파일선택</button></p>
+                                </div>
+    
+                                <div class="img_list">
+                                    <ul>
+                                        <!-- 다중 파일 입력 영역에 이미지 등록 전에는 리스트가 없습니다. -->
+                                        <li>
+                                            <p class="upload_file">
+                                                <input type="checkbox" class="f_chk" id="">
+                                                <span class="f_name">파일명.jpg</span>
+                                                <span class="f_size">145.1KB</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="upload_file">
+                                                <input type="checkbox" class="f_chk" id="">
+                                                <span class="f_name">파일명2.jpg</span>
+                                                <span class="f_size">5515.1KB</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="upload_file">
+                                                <input type="checkbox" class="f_chk" id="">
+                                                <span class="f_name">파일명3.jpg</span>
+                                                <span class="f_size">812.1KB</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="upload_file">
+                                                <input type="checkbox" class="f_chk" id="">
+                                                <span class="f_name">파일명4.jpg</span>
+                                                <span class="f_size">315.1KB</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <script>
+                                $(function(){
+                                    //드래그 화면 처리
+                                    var targ_itm = $('.multiimg_wrap');
+                                    var targ_up = $('.multiimg_wrap .upload_info');
+                                    targ_itm.on("dragover", function(e){
+                                        e.stopPropagation();
+                                        e.preventDefault();
+                                        targ_itm.addClass('onfile')
+                                    });
+                                    targ_up.on("dragleave mouseleave", function(e){
+                                        e.stopPropagation();
+                                        e.preventDefault();
+                                        targ_itm.removeClass('onfile');
+                                    }).on("drop", uploadFiles);
+                                        
+                                    function uploadFiles(e){
+                                        e.stopPropagation();
+                                        e.preventDefault();
+                                        targ_itm.removeClass('onfile');
+    
+                                        // 다중파일 드래그 업로드 로직필요합니다
+                                    }
+                                        
+                                    
+                                });
+                            </script>
+
+                            <p class="suffix_txt low_size low_top">추가이미지 : 상세페이지에 노출되는 이미지입니다.</p>
+                            <p class="suffix_txt low_size bottom_next">사진 사이즈 : 300*150, 파일크기 : 1kb 이하, jpg, gif</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <script>
+                    $(function(){
+                        $(".file_input").on("change",function(){
+                            var file_txt = $(this).val();
+                            if( file_txt.indexOf("fakepath") > 0 )
+                                file_txt = file_txt.substr(file_txt.indexOf("fakepath") + 9,file_txt.length);
+                            $(this).siblings(".file_name").text( file_txt );
+                        });
+                    });
+                </script>
+
+         
+
+                <div>
+                    <div class="stepmove_area non_bd al_right">
+                        <button type="button" class="btn_white">취소</button>
+                        <button type="button" class="btn_black">등록</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- //content -->
+
+        <!-- footer -->
+        <div class="footer">
+            <ul class="f_nav">
+                <li><a href="#a">회사소개</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보처리방침</a></li>
+                <li><a href="#a">도움말</a></li>
+                <li><a href="#a">이용수칙 및 환불정책</a></li>
+            </ul>
+            <div class="footer_info">
+                <ul class="address">
+                    <li>[본사] 04778 서울시 성동구 뚝섬로 1길 31 서울숲엠타워 404~405호 &nbsp;&nbsp;  대표전화 1688-6443 / 대표팩스 02-6008-2139 / 대표이메일 master@einet.co.kr</li>
+                    <li>[제주지사] 63148 제주특별자치도 제주시 오라로 10길 27 &nbsp;&nbsp; 대표전화 010-8664-4011</li>
+                </ul>
+                <p class="time">근무시간 : 평일 오전 9시 ~ 오후 5시 (점심시간 : 12:30 ~ 13:30)</p>
+                <p class="copy">Copyright &#169; 2019 Einet Inc. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- //footer -->
+
+    </div>
+</body>
+</html>

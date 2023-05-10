@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-간호관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 1 );
+            $(".datepicker").datepicker('setDate',new Date());
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="left_area">
+            <div class="left_top">
+
+                <div class="left_date_select mb10">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <a href="#a" class="btn_type02" id="layer_pop2">수급자  상태검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                </div>
+                <div class="checks">
+                    <input type="checkbox" id="chk_a1">
+                    <label for="chk_a1"><span></span>퇴소자 포함</label>
+                </div>
+            </div>
+            <div class="left_table manage_left_tbl">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">어르신명</th>
+                                <th scope="col">입소일<br>(퇴소일)</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">식사</th>
+                                <th scope="col">배설</th>
+                                <th scope="col">투약</th>
+                                <th scope="col">욕창점수</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top">
+                <div class="manage_pic">
+                    <div class="manage_picture">
+                        <img src="images/pic.png" alt="입소자 이미지">
+                    </div>
+                    <ul class="pic_text">
+                        <li><span>생활실</span>2층 호실,102호</li>
+                        <li><span>입소자성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31-26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                    </ul>
+                </div>
+
+                <div class="manage_data">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>평가일</dt>
+                                <dd>2020.03.01</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위변경</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창부위</dt>
+                                <dd>대전자(L),천골,미골,팔꿈치(L) </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>외상/자립상태</dt>
+                                <dd>준와상</dd>
+                            </dl>
+                            <dl>
+                                <dt>비위관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>식사</dt>
+                                <dd>죽</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>질병</dt>
+                                <dd>치매,중풍</dd>
+                            </dl>
+                            <dl>
+                                <dt>유치도뇨관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>배설</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>수급자상태</dt>
+                                <dd>틀니(부분), 방광루</dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창방지도구</dt>
+                                <dd>매트리스, 방석, 쿠션</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위</dt>
+                                <dd>유치도뇨관</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="right_bottom type2">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>간호처치</a></li>
+                        <li><a href="#a"><span></span>건강관리</a></li>
+                        <li><a href="#a"><span></span>투약관리</a></li>
+                        <li><a href="#a"><span></span>욕창관리</a></li>
+                        <li><a href="#a"><span></span>구강관리</a></li>
+                        <li><a href="#a"><span></span>의사진료</a></li>
+                        <li><a href="#a"><span></span>욕창.낙상<br>위험도평가</a></li>
+                        <li><a href="#a"><span></span>건강수준평가<br>및 간호기록</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+
+                    <div class="title_box">
+                        <h3 class="con_title">구강관리</h3>
+                        <div class="title_right_btn mr60">
+                            <a href="#a" class="btn_type03 bg_light_purple">기초정보 생성</a>
+                        </div>
+                    </div>
+
+                    <div class="teeth_area mb20">
+                        <div class="teeth_left">
+                            <div class="teeth_img">
+                                <img src="images/teeth.png" alt="치아 이미지">
+                            </div>
+                            <a href="#a" class="teeth1 on">1</a>
+                            <a href="#a" class="teeth2">2</a>
+                            <a href="#a" class="teeth3">3</a>
+                            <a href="#a" class="teeth4">4</a>
+                            <a href="#a" class="teeth5">5</a>
+                            <a href="#a" class="teeth6">6</a>
+                            <a href="#a" class="teeth7">7</a>
+                            <a href="#a" class="teeth8">8</a>
+                            <a href="#a" class="teeth9">9</a>
+                            <a href="#a" class="teeth10">10</a>
+                            <a href="#a" class="teeth11">11</a>
+                            <a href="#a" class="teeth12">12</a>
+                            <a href="#a" class="teeth13">13</a>
+                            <a href="#a" class="teeth14">14</a>
+                            <a href="#a" class="teeth15">15</a>
+                            <a href="#a" class="teeth16">16</a>
+                            <a href="#a" class="teeth17">17</a>
+                            <a href="#a" class="teeth18">18</a>
+                            <a href="#a" class="teeth19">19</a>
+                            <a href="#a" class="teeth20">20</a>
+                            <a href="#a" class="teeth21">21</a>
+                            <a href="#a" class="teeth22">22</a>
+                            <a href="#a" class="teeth23">23</a>
+                            <a href="#a" class="teeth24">24</a>
+                            <a href="#a" class="teeth25">25</a>
+                            <a href="#a" class="teeth26">26</a>
+                            <a href="#a" class="teeth27">27</a>
+                            <a href="#a" class="teeth28">28</a>
+                            <a href="#a" class="teeth29">29</a>
+                            <a href="#a" class="teeth30">30</a>
+                            <a href="#a" class="teeth31">31</a>
+                            <a href="#a" class="teeth32">32</a>
+                        </div>
+                        <div class="teeth_text">
+                            <div class="table_type02">
+                                <table>
+                                    <caption>구강관리</caption>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="30%">
+                                        <col width="20%">
+                                        <col width="30%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">작성일</th>
+                                            <td><input type="text" class="input_custom"></td>
+                                            <th scope="row">작성자</th>
+                                            <td><input type="text" class="input_custom"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">치아상태</th>
+                                            <td colspan="3">
+                                                <div class="teeth_select mb5">
+                                                    <div class="t_btn">
+                                                        <a href="#a">정상</a>
+                                                        <a href="#a">임플란트</a>
+                                                        <a href="#a">충치</a>
+                                                        <a href="#a">흔들림</a>
+                                                        <a href="#a">치아없음</a>
+                                                    </div>
+                                                </div>
+                                                <div class="teeth_select">
+                                                    <span>*통증 ( </span>
+                                                    <div class="t_btn">
+                                                        <a href="#a">예리한 동통</a>
+                                                        <a href="#a">둔한동통</a>
+                                                        <a href="#a">동통성 경련</a>
+                                                    </div> <span>)</span>  
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">틀니</th>
+                                            <td colspan="3" class="txt_l">
+                                                <div>
+                                                    윗니
+                                                    ( <div class="radio_custom mb5">
+                                                        <input type="radio" id="select1_1" name="radio1"  checked=""><label for="select1_1">완전틀니</label>
+                                                        <input type="radio" id="select1_2" name="radio1" ><label for="select1_2">부분틀니</label>
+                                                        <input type="radio" id="select1_3" name="radio1" ><label for="select1_3">없음</label>
+                                                    </div> )
+                                                </div>
+                                                <div>
+                                                    아랫니
+                                                    ( <div class="radio_custom mb5">
+                                                        <input type="radio" id="select2_1" name="radio2"  checked=""><label for="select2_1">완전틀니</label>
+                                                        <input type="radio" id="select2_2" name="radio2" ><label for="select2_2">부분틀니</label>
+                                                        <input type="radio" id="select2_3" name="radio2" ><label for="select2_3">없음</label>
+                                                    </div> )
+                                                </div>
+                                                <div>
+                                                    냄새유무
+                                                    ( <div class="radio_custom mb5">
+                                                        <input type="radio" id="select3_1" name="radio3"  checked=""><label for="select3_1">없다</label>
+                                                        <input type="radio" id="select3_2" name="radio3" ><label for="select3_2">있다</label>
+                                                    </div> )
+                                                </div>
+                                                <div>
+                                                    백태유무
+                                                    ( <div class="radio_custom mb5">
+                                                        <input type="radio" id="select4_1" name="radio4"  checked=""><label for="select4_1">없다</label>
+                                                        <input type="radio" id="select4_2" name="radio4" ><label for="select4_2">있다</label>
+                                                    </div> )
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">특이사항</th>
+                                            <td colspan="3"><textarea class="textarea_custom" rows="10"></textarea></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>     
+                        </div>
+                    </div>
+                    
+                    <div class="title_box">
+                        <div class="date_fs"> 
+                            <a href="#a" class="select_prev"><span class="blind">이전</span></a>
+                            <strong>2021년</strong>   
+                            <a href="#a" class="calendar_img"><span class="blind">달력열기</span></a>
+                            <a href="#a" class="select_next"><span class="blind">다음</span></a>
+                        </div>
+                    </div>
+
+                    <div class="table_type02 mb10">
+                        <table>
+                            <caption>구강관리</caption>
+                            <colgroup>
+                                <col width="9%">
+                                <col width="3%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="4.5%">
+                                <col width="10%">
+                                <col width="6%">
+                                
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2" rowspan="2">등록일</th>
+                                    <th scope="col" colspan="8">치아상태</th>
+                                    <th scope="col" colspan="4">틀니</th>
+                                    <th scope="col" colspan="2">냄새유무</th>
+                                    <th scope="col" colspan="2">백태유무</th>
+                                    <th scope="col" rowspan="2">특이사항</th>
+                                    <th scope="col" rowspan="2">작성자</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">정상</th>
+                                    <th scope="col">임플란트</th>
+                                    <th scope="col">충치</th>
+                                    <th scope="col">흔들림</th>
+                                    <th scope="col">치아없음</th>
+                                    <th scope="col">예리한 동통</th>
+                                    <th scope="col">둔한 동통</th>
+                                    <th scope="col">동통성 경련</th>
+
+                                    <th scope="col">윗니(완전)</th>
+                                    <th scope="col">윗니(부분)</th>
+                                    <th scope="col">아랫니(완전)</th>
+                                    <th scope="col">아랫니(부분)</th>
+
+                                    <th scope="col">없다</th>
+                                    <th scope="col">있다</th>
+
+                                    <th scope="col">없다</th>
+                                    <th scope="col" class="no_last">있다</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-12-11</td>
+                                    <td>
+                                        <div class="delete">
+                                            <a href="#a"><span class="blind">삭제</span></a>
+                                        </div>
+                                    </td>
+                                    <td>29</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>없다</td>
+                                    <td></td>
+                                    <td>없다</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>박민우</td>
+                                </tr>
+                                <tr>
+                                    <td>2020-12-11</td>
+                                    <td>
+                                        <div class="delete">
+                                            <a href="#a"><span class="blind">삭제</span></a>
+                                        </div>
+                                    </td>
+                                    <td>29</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>없다</td>
+                                    <td></td>
+                                    <td>없다</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>박민우</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                
+                </div>            
+                    
+                <div class="save_btn">
+                    <a href="#a">저장</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+
+
+        $('.teeth_left a').click(function(){
+            $(this).toggleClass('on');
+        });
+    </script>
+</body>
+</html>

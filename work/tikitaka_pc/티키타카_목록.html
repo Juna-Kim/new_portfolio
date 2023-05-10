@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>나라배움터</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<script src="js/jquery-1.12.0.min.js"></script>
+	
+	<link href="css/common.css" rel="stylesheet" property="stylesheet" type="text/css"/>
+	<link href="css/basic.css" rel="stylesheet" property="stylesheet" type="text/css"/>
+	<link href="css/sub.css" rel="stylesheet" property="stylesheet" type="text/css"/>
+	<link href="css/font.css" rel="stylesheet" property="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!--wrap-->
+	<div class="wrap">
+
+		<!-- header -->
+		<div id="header">
+			<div class="h_sec1">
+				<div class="container">
+					<h1><a href="#a"><img src="images/common/logo.jpg" alt="나라배움터"></a></h1>
+					<div>
+						<form  name="listSubForm" method="post" onSubmit = "return false;">
+						<input type='hidden' name='egovframework.double.submit.preventer.parameter.name' value='12C6897C-F1DA-44E4-BBE1-A56469C8F562'/>
+							<span class="search">
+								<label for="scWord">검색어를 입력해주세요</label>
+								<input type="text" placeholder="검색어를 입력해주세요" class="input" name="scWord"  onkeydown="if(event.keyCode == 13) goSubTotalSearch();" title="검색어입력">
+								</span>
+							<span class="search_btn"><input type="submit" onclick="goSubTotalSearch();" value="검색"></span>
+							<input type="hidden" name="sessionTokenKey" value=""/>
+						</form>
+					</div><!--/search-->
+
+					<div class="gnb">
+						<ul>
+							<li><a href="#a" class="log-in" >로그인</a></li>
+							<li><a href="#a" title="새창열림">회원가입</a></li>
+							<li><a href="#a" >학습지원</a></li>
+							<li><a href="#a" >누리집안내지도</a></li>
+							<li><a href="#a"  target="_blank"><b>커뮤니티</b></a></li>
+						</ul>
+						<div class="help_area"><input id="btnLayerGuideInfoData" type="hidden" value="popupGuide,layer_guide"></div>
+						<div class="sns_ico"><a href="#a" title="youtube로 이동" target="_blank"><img src = "images/common/youtube_logo.png" alt="유튜브이미지"/></a></div>
+						<div class="sns_ico"><a href="#a" title="twitter로 이동" target="_blank"><img src = "images/common/twitter_logo.png" alt="트위터이미지"/></a></div>
+						<div class="sns_ico"><a href="#a" title="facebook으로 이동" target="_blank"><img src = "images/common/facebook_logo.png" alt="페이스북이미지"/></a></div>
+						<div class="sns_ico"><a id="englishIntro" href="#a" onclick="" title="팝업열림">ENGLISH</a></div>
+					</div><!--/gnb-->
+				</div>
+			</div>
+
+			<div class="h_sec2 box-shadow10">
+				<div class="lnb">
+					<div class="bg box-shadow10"></div>
+					<ul class="container">
+						<li><a href="#a">나의 강의실</a>
+							<ul>
+								<li><a href="#a"> · 나의 학습공간</a></li>
+								<li><a href="#a"> · 나의 활동공간</a></li>
+								<li><a href="#a"> · 나의 맞춤형 추천</a></li>
+								<li><a href="#a"> · 수강신청취소</a></li>
+							</ul>
+						</li>
+						<li><a href="#a">정규과정</a>
+							<ul>
+								<li><a href=""> · 국정철학·과제</a></li>
+								<li><a href=""> · 공직가치</a></li>
+								<li><a href=""> · 리더십·자기계발</a></li>
+								<li><a href=""> · ICT·정보화</a></li>
+								<li><a href=""> · 직무공통</a></li>
+								<li><a href=""> · 직무전문</a></li>
+								<li><a href=""> · 글로벌</a></li>
+								<li><a href=""> · 어학</a></li>
+								<li><a href=""> · 인문소양</a></li>
+								<li><a href=""> · 생활·건강</a></li>
+								<li><a href=""> · 집합과정연계 이러닝</a></li>
+							</ul>
+						</li>
+						<li><a href="#a">비정규과정</a>
+							<ul>
+								<li><a href="#a"> · 마이크로러닝</a></li>
+								<li><a href="#a"> · 어학클래스</a></li>
+								<li><a href="#a"> · 전자책</a></li>
+								<li><a href="#a" title="커뮤니티" target="_blank"> · 커뮤니티</a></li>
+							</ul>
+						</li>
+						<li><a href="#a">테마과정</a>
+							<ul>
+								<li><a href="#a"> · On 세상 지식탐구생활</a></li>
+								<li><a href="#a"> · 소행성</a></li>
+								<li><a href="#a"> · 공개강좌</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="#a">나라배움터</a>
+							<ul>
+								<li><a href="#a"> · 나라배움터 소개</a></li>
+								<li><a href="#a"> · 공지사항</a></li>
+								<li><a href="#a"> · 공동활용</a></li>
+								<li><a href="#a"> · 열린강좌</a></li>
+								<li><a href="#a"> · 학습지원</a></li>
+								<li><a href="#a"> · 국가인재원 집합과정</a></li>
+								<li><a href="#a"> · 사회봉사활동</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+
+		<!-- concon -->
+		<div class="concon">
+			<!-- tiki_visual -->
+			<div class="tiki_visual">
+				<div class="v_inner">
+					<img class="center_img" src="images/sub/main_c_bg.png" alt="">
+					<h3><p>데이터로 사고하고, 데이터로 놀자!</p>데이터씽킹 티키타카</h3>
+				</div>
+			</div>
+			<!-- //tiki_visual -->
+			
+			<!-- tikitaka_con -->
+			<div class="tikitaka_con">
+				<ul class="location">
+					<li><img src="images/common/sub-ico-home.png" alt="home"></li>
+					<li>&gt;</li>
+					<li>테마과정</li>
+					<li>&gt;</li>
+					<li>데이터 아카데미</li>
+				</ul>
+
+				<div class="tikitaka_box" style="margin-bottom:25px;">
+					<div class="box_top">
+						<strong>디자인씽킹 티키타카 소개</strong>
+						<div class="btn">
+							<a href="#a" class="btn_arrow">접어두기</a>
+							<a href="#a" class="mypage">마이페이지</a>
+						</div>
+					</div>
+					<div class="tikitaka_intro">
+						<div class="tikitaka_intro_left">
+							<strong class="new_title">★ 새로운 문제가 2주마다 업데이트 됩니다!! ★</strong>
+							<div class="new_text_box">
+								<em class="bold">카카오톡에서 나라배움터와 플러스친구</em>를 맺으시면, <br>
+								누구보다 빠르게! <br>
+								업데이트 된 해설영상과 새로운 문제를 확인하실 수 있습니다 !! <br>
+								(카카오톡에서 “나라배움터”를 검색하세요 !)
+							</div>
+							<div class="new_text_box">
+								<h3>다 같이 함께 티키타카하며, 다양한 문제들을 해결하고, <br>데이터 생각근육을 키워나가요!</h3>
+								<p class="big_tit">이런 당신에게 추천합니다</p>
+								<div class="text_box_img">
+									<img src="images/sub/sub_topimg1.png" alt="데이터를 활용해 성과를 높이고 싶다면?데이터 분석을 통해 정책을 결정하고 싶다면?데이터를 어떻게활용하고 업무에 연결고리를 만들 수 있을지 고민한다면?,데이터로 아이디어를 얻고,다양한 인사이트를 제시하고 싶다면?">
+								</div>
+								<ul>
+									<li>▶ 데이터를 활용해 <em class="bold">성과를 높이고 싶다면?</em></li>
+									<li>▶ 데이터분석을 통해 <em class="bold">정책을 결정하고 싶다면?</em></li>
+									<li>▶ 데이터를 어떻게 활용하고, <em class="bold">업무에 연결고리를 만들 수 있을지 고민한다면?</em></li>
+									<li>▶ 데이터로 아이디어를 얻고, <em class="bold">다양한 인사이트를 제시하고 싶다면?</em></li>
+								</ul>
+							</div>
+							<div class="new_text_box">
+								<h3>티키타카? 어떻게 하는 건가요?</h3>
+								<p>데이터를 요리~죠리~ 살펴보고, <br>
+									재치있고 창의적인 생각들을 마음껏 펼쳐주세요!
+								</p>
+								<ul>
+									<li>① 2주마다 새로운 문제영상 학습 (10분)</li>
+									<li>② 문제풀이 참여 및 토론 : 자유롭게 답변을 작성하거나, 궁금한 것을 질문해보세요! (10분)</li>
+									<li>③ 다른 학습자의 답변도 읽어보고 재미있고 유익한 답변, 창의적인 답변들에 하트(좋아요) 꾸욱~! (3분)</li>
+									<li>④ 나만의 노하우도 댓글로 공유하며 집단지성으로 문제를 해결해보기! (7분)</li>
+									<li>⑤ 동료들과도 함께 소통하며, 전문강사의 답변과 배지도 받을 수 있어요. (10분) <br/>
+										<div class="text_box_img box_size2">
+											<img src="images/sub/sub_topimg2.png" alt="뱃지 아이콘">
+										</div>
+										누가 누가~ 배지와 하트를 많이 받았나? 차시 별 TOP5선정, 상품이 우수수수~
+									</li>
+									<li>⑥ 2주 뒤엔 문제풀이 영상으로 답을 확인하고 (20분), 새로운 문제영상을 학습합니다!</li>
+								</ul>
+							</div>			
+							<div class="new_text_box">
+								<p>* 1개 차시 당 최대 상시 학습 시간 총 <em class="bold">60분</em> 인정</p>
+								<table class="s_table">
+									<caption>학습시간</caption>
+									<thead>
+										<tr>
+											<th>문제영상</th>
+											<th>좋아요</th>
+											<th>풀이답변</th>
+											<th>댓글 달기</th>
+											<th>풀이영상</th>
+											<th>배지 획득</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>10분</td>
+											<td>3분</td>
+											<td>10분</td>
+											<td>7분</td>
+											<td>20분</td>
+											<td>10분</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="new_text_box">
+								<h3>무엇을 배우나요?</h3>
+								<p>본 과정은 데이터 분석 기법과 같은 하드스킬(hard skill)은 지양하고,<br/>
+								데이터 리터러시 역량과 데이터 마인드 및 사고 등 <em class="fc_blue">소프트 스킬(soft skill)</em> 함양을 목표로 합니다.</p>
+								<div class="text_box_img">
+									<img src="images/sub/sub_topimg3.png" alt="데이터기반문제해결,데이터분석도구 & 기법,데이터리터러시,데이터마인드 & 데이터사고력,데이터거 버넌스&데이터인프라등 문화구축">
+								</div>
+								<p>각 차시 별 제시되는 문제들은<p>
+									<ul>
+										<li>- 공공, 민간 사례를 기반으로 현업활용도가 높고,</li>
+										<li>- 다양한 해결방안을 도출할 수 있는, 짧고 흥미로운 문제들로 구성되어 있습니다.</li>
+									</ul>
+									<div class="text_box_img">
+										<img src="images/sub/sub_topimg4.png" alt="데이터이해,데이터확보,데이터의사결정,데이터커뮤니케이션">
+									</div>
+									<p>총 17개 차시를 통해 데이터 기반 문제들을 해결 하다 보면,</p>
+									<ul>
+										<li>-(데이터 이해) 데이터의 숨겨진 가치와 의미, 패턴을 발견하고</li>
+										<li>-(데이터 확보) 데이터 구조를 파악하여, 필요한 자료를 확보하고,</li>
+										<li>-(데이터 의사결정) 통계적 의사결정을 통해 문제를 해결하며,</li>
+										<li>-(데이터 커뮤니케이션) 데이터의 사실성, 연관성 등 다양한 원리를 파악하여 데이터로 표현할 수 있습니다.</li>
+									</ul>
+									<br/>
+									<p>* 17개 전 차시를 모두 학습하신 분들 중 추첨을 통해서 푸짐한 상품을 가득 드려요!</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;우리 이제 티키타카하러 가 봅시다~ 레쓰고! :D</p>
+								</p>
+							</div>
+							<div class="new_text_box">
+								<h3> 추가학습 TIP</h3>
+								<p>* 매 차시 문제 및 풀이영상 업데이트 소식을 쉽고~ 빠르게 받아보고 싶다면? (카카오톡>나라배움터>친구추가)</p>
+								<p><a href="#a">* 나의 <em class="fc_blue">[데이터리터러시]</em> 역량 수준은?</a></p>
+								<p>* 본 과정을 들어가기에 앞서, 데이터 사고 관련 콘텐츠로 역량을 다지고 싶다면?</p>
+								<div class="preview_img">
+									<a href="#a"><img src="images/sub/sample_img.jpg" alt=""></a>
+									<a href="#a"><img src="images/sub/sample_img.jpg" alt=""></a>
+									<a href="#a"><img src="images/sub/sample_img.jpg" alt=""></a>
+									<a href="#a"><img src="images/sub/sample_img.jpg" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="tikitaka_intro_right">
+							<img src="images/sub/sample_img.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+				<section class="tiki_top">
+					<div class="top_title">
+						<div class="schedule">
+							<button type="button" class="schedule_view">차시목록</button>
+							<ul class="schedule_list">
+								<li><a href="#a">(1차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(2차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(3차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(4차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(5차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(6차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(7차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(8차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(9차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(10차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(11차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(12차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(13차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+								<li><a href="#a">(14차시) 공공데이터로 파이썬 데이터 분석 시작하기</a></li>
+							</ul>
+						</div>
+						<strong class="tit">(1차시) 공공데이터로 파이썬 데이터 분석 시작하기</strong>
+					</div>
+					<div class="tiki_video">
+						<img src="images/sub/sample_img.jpg" alt="">
+					</div>
+					<div class="tiki_answer">
+						<div class="answer_top">
+							<p class="suc">풀이 참여 완료</p>
+							<a href="#a" class="answer_btn"><em>답변참여하기</em></a>
+							<strong>전문강사의 멘토링이 가능합니다.</strong>
+							<span>답변에 의견 및 궁금증을 올리시면 <br>전문강사가 선별하여 답을 올려드립니다.</span>
+						</div>
+
+						<div class="answer_bottom">
+							<!-- 문제풀이 공개전 -->
+							<div class="bottom_text_wrap">
+								<div class="btm_txt">문제풀이 영상이 <br>곧 공개됩니다.</div>
+								<div class="date_wrap">
+									<p class="date_num">D - <em>10</em></p>
+									<p class="date"><span>2021.08.20. </span> 공개</p>
+								</div>
+							</div>
+							<!-- 문제풀이 공개 후 -->
+							<!-- <div class="bottom_text_wrap">
+								<div class="btm_txt pd">문제풀이 영상이 공개됐습니다.</div>
+							</div> -->
+							<div class="answer_thumb">
+								<img src="images/sub/sample_img.jpg" alt="">
+							</div>
+						</div>
+
+						<div class="current_answer">
+							<p>현재까지의 답변 참여자 <span>15</span>명</p>
+							<div class="btn_wrap">
+								<div class="tiki_count_btn">
+									<a href="javascript:void(0);" onclick="" >
+										<span class="like on">
+											<input type="text" name="" value="1875" style="width:40px;" readonly="">
+										</span>
+									</a>
+								</div>
+								<div class="share_btn">
+									<button type="button" class="share"><span class="hidden">링크</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="tiki_bottom">
+					<div class="bottom_left">
+						<div class="top_text">
+							<div class="text_wrap">
+								<h3>초급자를 위해 준비한 <br>
+									[데이터 분석, 데이터 사이언스] 강의입니다.
+								</h3>
+								<div class="select_custom">
+									<button type="button" class="file_open">첨부파일</button>
+									<ul class="select_list">
+										<li class="all"><a href="#a">3건일괄 다운로드</a></li>
+										<li><a href="#a">데이터 분석, 데이터 사이언스 강의_강의자료.pptx</a></li>
+										<li><a href="#a">데이터 분석, 데이터 사이언스 강의_실습자료.xlsx</a></li>
+										<li><a href="#a">데이터 분석, 데이터 사이언스 강의_데이터정보.hwp</a></li>
+									</ul>
+									<button type="button" class="file_close"></button>
+								</div>
+							</div>
+							<p>
+								이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 
+								날까요? 2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 
+								어떤 공원이 있을까요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 
+								형태의 데이터를 다뤄보며 Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.
+							</p>
+						</div>
+						<div class="board_area">
+							<h3>답변 목록</h3>
+							<div class="board_category">
+								<ul class="category_list">
+									<li class="on"><a href="#a">최신순</a></li>
+									<li><a href="#a">좋아요순</a></li>
+									<li><a href="#a">댓글많은순</a></li>
+									<li><a href="#a">뱃지 답변</a></li>
+									<li><a href="#a">감사 댓글 답변</a></li>
+									<li><a href="#a">내 답변</a></li>
+								</ul>
+								<p class="total">총 <span>15</span> 개</p>
+							</div>
+							<ul class="board_list">
+								<li>
+									<div class="board_desc">
+										<div class="tiki_count_btn">
+											<a href="javascript:void(0);" onclick="" >
+												<span class="count">
+													<input type="text" name="" value="100" style="width:40px;" readonly="">
+												</span>
+											</a>
+											<a href="javascript:void(0);" onclick="" >
+												<span class="like">
+													<input type="text" name="" value="1875" style="width:40px;" readonly="">
+												</span>
+											</a>
+										</div>
+										<div class="info">
+											<p class="name">이정숙</p>
+											<p>2021.06.10</p>
+										</div>
+									</div>
+									<div class="board_tit">초급자를 위해 준비한 [데이터 분석, 데이터 사이언스] 강의 답변입니다</div>
+									<div class="board_con ico">
+										<p class="board_txt text_ellipsis">
+												<a href="#a">이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+												2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+												요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+												Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.
+											</a>
+										</p>
+										<p class="board_ico"><img src="images/sub/badge_compliment.png" alt="칭찬한걸음 뱃지"></p>
+									</div>
+								</li>
+								<li>
+									<div class="board_desc">
+										<div class="tiki_count_btn">
+											<a href="javascript:void(0);" onclick="" >
+												<span class="count">
+													<input type="text" name="" value="100" style="width:40px;" readonly="">
+												</span>
+											</a>
+											<a href="javascript:void(0);" onclick="" >
+												<span class="like">
+													<input type="text" name="" value="1875" style="width:40px;" readonly="">
+												</span>
+											</a>
+										</div>
+										<div class="info">
+											<p class="name">이정숙</p>
+											<p>2021.06.10</p>
+										</div>
+									</div>
+									<div class="board_tit">초급자를 위해 준비한 [데이터 분석, 데이터 사이언스] 강의 답변입니다</div>
+									<div class="board_con">
+										<p class="board_txt text_ellipsis">
+											<a href="#a">이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.
+											</a>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="board_desc">
+										<div class="tiki_count_btn">
+											<a href="javascript:void(0);" onclick="" >
+												<span class="count">
+													<input type="text" name="" value="100" style="width:40px;" readonly="">
+												</span>
+											</a>
+											<a href="javascript:void(0);" onclick="" >
+												<span class="like">
+													<input type="text" name="" value="1875" style="width:40px;" readonly="">
+												</span>
+											</a>
+										</div>
+										<div class="info">
+											<p class="name">이정숙</p>
+											<p>2021.06.10</p>
+										</div>
+									</div>
+									<div class="board_tit">초급자를 위해 준비한 [데이터 분석, 데이터 사이언스] 강의 답변입니다</div>
+									<div class="board_con ico">
+										<p class="board_txt text_ellipsis">
+											<a href="#a">이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.
+											</a>
+										</p>
+										<p class="board_ico"><img src="images/sub/badge_sense.png" alt="당신의 센스 뱃지"></p>
+									</div>
+								</li>
+								<li>
+									<div class="board_desc">
+										<div class="tiki_count_btn">
+											<a href="javascript:void(0);" onclick="" >
+												<span class="count">
+													<input type="text" name="" value="1000" style="width:40px;" readonly="">
+												</span>
+											</a>
+											<a href="javascript:void(0);" onclick="" >
+												<span class="like">
+													<input type="text" name="" value="1875" style="width:40px;" readonly="">
+												</span>
+											</a>
+										</div>
+										<div class="info">
+											<p class="name">이정숙</p>
+											<p>2021.06.10</p>
+										</div>
+									</div>
+									<div class="board_tit">초급자를 위해 준비한 [데이터 분석, 데이터 사이언스] 강의 답변입니다</div>
+									<div class="board_con ico">
+										<p class="board_txt text_ellipsis">
+											<a href="#a">이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.
+											</a>
+										</p>
+										<p class="board_ico"><img src="images/sub/badge_respect.png" alt="취향존중 뱃지"></p>
+									</div>
+								</li>
+								<li>
+									<div class="board_desc">
+										<div class="tiki_count_btn">
+											<a href="javascript:void(0);" onclick="" >
+												<span class="count">
+													<input type="text" name="" value="100" style="width:40px;" readonly="">
+												</span>
+											</a>
+											<a href="javascript:void(0);" onclick="" >
+												<span class="like">
+													<input type="text" name="" value="1875" style="width:40px;" readonly="">
+												</span>
+											</a>
+										</div>
+										<div class="info">
+											<p class="name">이정숙</p>
+											<p>2021.06.10</p>
+										</div>
+									</div>
+									<div class="board_tit">초급자를 위해 준비한 [데이터 분석, 데이터 사이언스] 강의 답변입니다</div>
+									<div class="board_con">
+										<p class="board_txt text_ellipsis">
+											<a href="#a">이디야는 스타벅스 근처에 입점한다는 설이 있었습니다. 과연 이디야와 스타벅스의 매장입지는 얼마나 차이가 날까요? 
+											2013년부터 2019년까지 부동산 가격 변동 추세가 아파트 분양가에도 반영될까요? 우리 동네에는 어떤 공원이 있을까
+											요? 공공데이터 포털에 있는 데이터를 어떻게 활용하면 좋을까요? 공공데이터를 통해 여러 형태의 데이터를 다뤄보며 
+											Python과 여러 데이터분석 라이브러리에 익숙해 지는 것을 목표로 합니다.
+											</a>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bottom_right">
+						<h3 class="problem_tit">다른 문제 풀어보기</h3>
+						<ul class="problem_list">
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+							<li>
+								<div class="problem_video">
+									<img src="images/sub/sample_img.jpg" alt="">
+								</div>
+								<p class="tit">공공데이터로 파이썬 데이터 분석 시작하기</p>
+								<p class="date">2021.06.10</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<div class="tikitaka_quick">
+					<a class="tiki_quick quick1" href="#a" title="답변참여하기">답변 참여하기</a>
+					<a class="tiki_quick quick2" href="#a" title="안내">안내</a>
+					<a class="tiki_quick quick3" href="#a" titlte="순위">순위</a>
+					<a class="tiki_quick quick4" href="#a" title="경품">경품</a>
+				</div>
+				
+			</div>
+			<!-- //tikitaka_con -->
+		</div>
+		<!--// concon-->
+		
+		<!-- footer -->
+		<div id="ft">
+			<div id="fnb">
+				<div class="fnb">
+					<ul class="btn-ft">
+						<li><a href="#a" title="교육서비스헌장">교육서비스헌장</a></li>
+						<li><a href="#a" title="개인정보처리방침" class="str">개인정보처리방침</a></li>
+						<li><a href="#a" title="저작권정책">저작권정책</a></li>
+						<li><a href="#a" class="only-m" title="이용문의/FAQ">이용문의/FAQ</a></li>
+					</ul>
+					<ul class="go-url">
+						<li>
+							<legend><label for="searchType2">관련사이트 바로가기 선택</label></legend>
+							<select name="relateSiteList" id="searchType2">
+								<option value="">관련사이트 바로가기</option>
+								<option value="">국가공무원인재개발원</option>
+								<option value="">역량진단시스템</option>
+								<option value="">인재개발정보센터</option>
+								<option value="">인사혁신처</option>
+							</select>
+							<a href="#none" class="btn_go"><img src="images/common/btn_go.png"   alt="관련사이트로 이동"></a>
+						</li>
+						<li>
+							<legend><label for="searchType">공동활용기관 바로가기 선택</label></legend>
+							<select name="insttList" id="searchType">
+								<option value="">공동활용기관 바로가기</option>
+							</select>
+							<a href="" class="btn_go"><img src="images/common/btn_go.png"   alt="공동활용기관 이동"></a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="logo"><a href="#"><img src="images/common/ft-logo.jpg" alt="나라배움터 하단로고" /></a></div>
+				<div class="campus">
+					<ul>
+						<li><img src="images/common/img-campus01.jpg" alt="진천캠퍼스 이미지" /></li>
+						<li>
+							<p class="name">진천캠퍼스</p>
+							<address>우) 27873 충북 진천군 덕산면 교학로 30 국가공무원인재개발원(본원)</address>
+						</li>
+					</ul>
+				</div>
+				<div class="campus ml60">
+					<ul>
+						<li><img src="images/common/img-campus02.jpg" alt="과천캠퍼스 이미지" /></li>
+						<li>
+							<p class="name">과천캠퍼스</p>
+							<address>우) 13811 경기도 과천시 교육원로 118 국가공무원인재개발원(과천분원)</address>
+						</li>
+					</ul>
+				</div>
+				<div class="info">
+					<ul>
+						<li><strong>이용문의</strong></li></br>
+						<li>나라배움터 : 02-500-8666,8668 (월~금 09:00~18:00)</li></br>
+						<li>어학과정 : 02-2009-0000 (YBM)</li></br>
+						<li>지식 마이크로러닝 : 02-2072-6380 (현대경제연구원)</li></br>
+						<li>eBook : 070-7602-2676 (교보문고-엠엘에스에스)</li></br>
+					</ul>
+				</div>
+				<div class="copyright">Copyright(C) National HRD Institute. All rights reserved.</div>
+			</div>
+		</div>
+		<!-- //footer -->
+
+		<!-- popup -->
+		<div class="tiki_popup popup_show" id="share_popup">
+			<div class="popup_outer">
+				<div class="bg_dim"></div>
+				<div class="popup_inner small">
+					<button type="button" class="popup_close"></button>
+					<div class="popup_cont">
+						<h2 class="share_tit">공유</h2>
+						<div class="share_wrap">
+							<p class="share_address">https://e-learning.nhi.go.kr/</p>
+							<button type="button" class="copy_btn">복사</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //popup -->
+
+		<script>
+			$(function(){
+
+				var tf = $(window).scrollTop();
+					$('.tikitaka_quick').animate({top:tf+"px" },{queue: false, duration: 200});
+
+				var flag = 'p';
+				$('.btn_arrow').click(function(){
+					$(this).parents().next().slideToggle(300);
+					$(this).toggleClass('on');
+					if(flag == 'p'){
+						flag = 'j';
+						$('.btn_arrow').html('펼쳐보기');
+					}else{
+						flag = 'p';
+						$('.btn_arrow').html('접어두기');
+					}
+				});
+
+				$('.select_custom .file_open').on('click',function(){
+					if( !$(this).hasClass('on') ){
+						$(this).addClass('on');
+						$('.select_list').show();
+					} else {
+						$(this).removeClass('on');
+						$('.select_list').hide();
+					}
+				});
+
+				$('.schedule_view').on('click',function(){
+					$('.schedule_list').toggleClass('on');
+				})
+			});
+
+			$(function(){
+				$('#share_popup').removeClass('popup_show');
+				$('.share').on('click', function(e){
+					$('#share_popup').addClass('popup_show')
+				})
+				$('.bg_dim, .popup_close').on('click', function(e){
+					$(this).parents('.popup_show').removeClass('popup_show');
+				})
+			});
+		</script>
+
+	</div>
+	<!--wrap-->
+
+</body>
+</html>

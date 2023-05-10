@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-간호관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 2 );
+            $(".datepicker").datepicker('setDate',new Date());
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="wrap bg_green">
+
+        <div class="left_area">
+            <div class="left_top">
+
+                <div class="left_date_select mb10">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <a href="#a" class="btn_type02" id="layer_pop2">수급자  상태검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                </div>
+                <div class="checks">
+                    <input type="checkbox" id="chk_a1">
+                    <label for="chk_a1"><span></span>퇴소자 포함</label>
+                </div>
+            </div>
+            <div class="left_table manage_left_tbl">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">어르신명</th>
+                                <th scope="col">입소일<br>(퇴소일)</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">식사</th>
+                                <th scope="col">배설</th>
+                                <th scope="col">투약</th>
+                                <th scope="col">욕창점수</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top">
+        
+                <div class="manage_pic">
+                    <div class="manage_picture">
+                        <img src="images/pic.png" alt="입소자 이미지">
+                    </div>
+                    <ul class="pic_text">
+                        <li><span>생활실</span>2층 호실,102호</li>
+                        <li><span>입소자성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31-26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                    </ul>
+                </div>
+
+                <div class="manage_data">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>평가일</dt>
+                                <dd>2020.03.01</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위변경</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창부위</dt>
+                                <dd>대전자(L),천골,미골,팔꿈치(L) </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>외상/자립상태</dt>
+                                <dd>준와상</dd>
+                            </dl>
+                            <dl>
+                                <dt>비위관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>식사</dt>
+                                <dd>죽</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>질병</dt>
+                                <dd>치매,중풍</dd>
+                            </dl>
+                            <dl>
+                                <dt>유치도뇨관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>배설</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>수급자상태</dt>
+                                <dd>틀니(부분), 방광루</dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창방지도구</dt>
+                                <dd>매트리스, 방석, 쿠션</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위</dt>
+                                <dd>유치도뇨관</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="right_bottom type2">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>간호처치</a></li>
+                        <li><a href="#a"><span></span>건강관리</a></li>
+                        <li><a href="#a"><span></span>투약관리</a></li>
+                        <li><a href="#a"><span></span>욕창관리</a></li>
+                        <li><a href="#a"><span></span>구강관리</a></li>
+                        <li><a href="#a"><span></span>의사진료</a></li>
+                        <li><a href="#a"><span></span>욕창.낙상<br>위험도평가</a></li>
+                        <li><a href="#a"><span></span>건강수준평가<br>및 간호기록</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+                    
+                    <div class="title_box">
+                        <h3 class="con_title">건강수준평가 및 간호기록</h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">기초정보 생성</a>
+                            <a href="#a" class="btn_type03 bg_purple">등록</a>
+                        </div>
+                    </div>
+
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>건강수준평가 및 간호기록</caption>
+                            <colgroup>
+                                <col width="3%">
+                                <col width="3%">
+                                <col width="14%">
+                                <col width="5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                                <col width="7.5%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="check1_1" name="check1">
+                                            <label for="check1_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" colspan="2">평가일</th>
+                                    <th scope="col">체중</th>
+                                    <th scope="col">신장</th>
+                                    <th scope="col">의식상태</th>
+                                    <th scope="col">정서상태</th>
+                                    <th scope="col">활동상태</th>
+                                    <th scope="col">호흡기계</th>
+                                    <th scope="col">소화기계</th>
+                                    <th scope="col">식어상태</th>
+                                    <th scope="col">심혈관계</th>
+                                    <th scope="col">피부상태</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="check2_1" name="check2">
+                                            <label for="check2_1"><span></span></label>
+                                        </div>
+                                    </td>
+                                    <td>2021-01-27</td>
+                                    <td>
+                                        <div class="delete">
+                                            <a href="#a"><span class="blind">삭제</span></a>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="check3_1" name="check3">
+                                            <label for="check3_1"><span></span></label>
+                                        </div>
+                                    </td>
+                                    <td>2021-01-27</td>
+                                    <td>
+                                        <div class="delete">
+                                            <a href="#a"><span class="blind">삭제</span></a>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="check4_1" name="check4">
+                                            <label for="check4_1"><span></span></label>
+                                        </div>
+                                    </td>
+                                    <td>2021-01-27</td>
+                                    <td>
+                                        <div class="delete">
+                                            <a href="#a"><span class="blind">삭제</span></a>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="check5_1" name="check5">
+                                            <label for="check5_1"><span></span></label>
+                                        </div>
+                                    </td>
+                                    <td>2021-01-27</td>
+                                    <td>
+                                        <div class="delete">
+                                            <a href="#a"><span class="blind">삭제</span></a>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="title_box">
+                        <h3 class="con_title">입소자 건강수준평가 및 간호기록</a></h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">목록</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+                    <div class="table_type02 mb10">
+                        <table>
+                            <caption>입소자 건강수준평가 및 간호기록</caption>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="14%">
+                                <col width="10%">
+                                <col width="14%">
+                                <col width="10%">
+                                <col width="14%">
+                                <col width="10%">
+                                <col width="18%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">평가일</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">평가자</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">연락처</th>
+                                    <td>032-255-6322</td>
+                                    <th scope="row">주소</th>
+                                    <td colspan="5" class="txt_l">충청남도 아산시 도고산로 433-10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">질병 욕구사정</th>
+                                    <td colspan="3" class="txt_l">후두암,유방암,간암,폐암,파킨슨,요통,관절염,심입지장궤양,위궤양,위염,갑상선질환,당뇨,협심증,
+                                        뇌경색/뇌출혈,고혈암,천식,만성기관지염,결핵,폐결핵,만성중이염,녹내장,백내장,만성신부전증,빈혈
+                                    </td>
+                                    <th scope="row">입소실 질병유형</th>
+                                    <td colspan="3" class="txt_l">뇌졸중,고혈압,관절염,신경통,골다공증,치매,파킨슨병,입소시 질병유형</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_type02 mb10">
+                        <table>
+                            <caption>입소자 건강수준평가 및 간호기록</caption>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="45%">
+                                <col width="45%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col" colspan="3"><span class="fc_red">(이 내용은 급여제공기록지와 연계됩니다.)</span></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="4">수급자 상태</th>
+                                    <td class="txt_l">
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk1_1" name="tbl_check1">
+                                            <label for="tchk1_1"><span></span>와상</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk1_2" name="tbl_check1">
+                                            <label for="tchk1_2"><span></span>준와상</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk1_3" name="tbl_check1">
+                                            <label for="tchk1_3"><span></span>자립</label>
+                                        </div>
+                                    </td>
+                                    <td class="txt_l">
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk2_1" name="tbl_check2">
+                                            <label for="tchk2_1"><span></span>치매</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk2_2" name="tbl_check2">
+                                            <label for="tchk2_2"><span></span>중풍</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk2_3" name="tbl_check2">
+                                            <label for="tchk2_3"><span></span>고혈압</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk2_4" name="tbl_check2">
+                                            <label for="tchk2_4"><span></span>당뇨</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk2_5" name="tbl_check2">
+                                            <label for="tchk2_5"><span></span>관절염</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk2_6" name="tbl_check2">
+                                            <label for="tchk2_6"><span></span>기타</label>
+                                        </div>
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="txt_l">
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_1" name="tbl_check3">
+                                            <label for="tchk3_1"><span></span>기관지절개관</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_2" name="tbl_check3">
+                                            <label for="tchk3_2"><span></span>틀니(부분)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_3" name="tbl_check3">
+                                            <label for="tchk3_3"><span></span>틀니(전체)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_4" name="tbl_check3">
+                                            <label for="tchk3_4"><span></span>비위관(費胃館,L_tube)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_5" name="tbl_check3">
+                                            <label for="tchk3_5"><span></span>고정소변배출관(유치도뇨관)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_6" name="tbl_check3">
+                                            <label for="tchk3_6"><span></span>방광루</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_7" name="tbl_check3">
+                                            <label for="tchk3_7"><span></span>요루(요도샛길)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_8" name="tbl_check3">
+                                            <label for="tchk3_8"><span></span>장루(창자샛길)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk3_9" name="tbl_check3">
+                                            <label for="tchk3_9"><span></span>기저귀</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_l">
+                                        <div class="checks" >
+                                            <input type="checkbox" id="tchk4_1" name="tbl_check4">
+                                            <label for="tchk4_1"><span></span>체위변경 대상자</label>
+                                        </div>
+                                    </td>
+                                    <td class="txt_l">
+                                        <span>[욕창방지보조도구 체크]</span>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk5_1" name="tbl_check5">
+                                            <label for="tchk5_1"><span></span>매트리스</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk5_2" name="tbl_check5">
+                                            <label for="tchk5_2"><span></span>방석</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk5_3" name="tbl_check5">
+                                            <label for="tchk5_3"><span></span>쿠션</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="txt_l"> [욕창부위체크] <br>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_1" name="tbl_check6">
+                                            <label for="tchk6_1"><span></span>대전자(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_2" name="tbl_check6">
+                                            <label for="tchk6_2"><span></span>대전자(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_3" name="tbl_check6">
+                                            <label for="tchk6_3"><span></span>천골/미골</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_4" name="tbl_check6">
+                                            <label for="tchk6_4"><span></span>발꿈치(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_5" name="tbl_check6">
+                                            <label for="tchk6_5"><span></span>발꿈치(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_6" name="tbl_check6">
+                                            <label for="tchk6_6"><span></span>팔꿈치(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_7" name="tbl_check6">
+                                            <label for="tchk6_7"><span></span>팔꿈치(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_8" name="tbl_check6">
+                                            <label for="tchk6_8"><span></span>무릎(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_9" name="tbl_check6">
+                                            <label for="tchk6_9"><span></span>무릎(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_10" name="tbl_check6">
+                                            <label for="tchk6_10"><span></span>발목(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_11" name="tbl_check6">
+                                            <label for="tchk6_11"><span></span>발목(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_12" name="tbl_check6">
+                                            <label for="tchk6_12"><span></span>어깨(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_13" name="tbl_check6">
+                                            <label for="tchk6_13"><span></span>어깨(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_14" name="tbl_check6">
+                                            <label for="tchk6_14"><span></span>장골(R)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_15" name="tbl_check6">
+                                            <label for="tchk6_15"><span></span>장골(L)</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_16" name="tbl_check6">
+                                            <label for="tchk6_16"><span></span>후두</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_17" name="tbl_check6">
+                                            <label for="tchk6_17"><span></span>기타</label>
+                                        </div>
+                                        <input type="text" class="input_custom w10 mt5">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_type02 mb10">
+                        <table>
+                            <caption>입소자 건강수준평가 및 간호기록</caption>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="20.33%">
+                                <col width="10%">
+                                <col width="22.33%">
+                                <col width="10%">
+                                <col width="22.33%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">활력증상</th>
+                                    <td colspan="5" class="txt_l">
+                                        BP: <input type="text" class="input_custom w10"> mmHg,
+                                        P: <input type="text" class="input_custom w10"> /min,
+                                        R: <input type="text" class="input_custom w10"> /min,
+                                        BT: <input type="text" class="input_custom w10"> &#8451;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">체중</th>
+                                    <td class="txt_l"><input type="text" class="input_custom w20"> Kg</td>
+                                    <th scope="row">체중변화</th>
+                                    <td class="txt_l">
+                                        <div class="radio_custom">
+                                            <input type="radio" id="radio1_1" name="radio1"  checked="">
+                                            <label for="radio1_1">없음</label>
+                                            <input type="radio" id="radio1_2" name="radio1" >
+                                            <label for="radio1_2">중</label>
+                                            <input type="radio" id="radio1_3" name="radio1" >
+                                            <label for="radio1_3">감</label>
+                                            <input type="text" class="input_custom w20"> Kg
+                                        </div>
+                                        
+                                    </td>
+                                    <th scope="row">결혼상태</th>
+                                    <td class="txt_l">기혼</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신장</th>
+                                    <td class="txt_l"><input type="text" class="input_custom w20"> Cm</td>
+                                    <th scope="row">직업/학력</th>
+                                    <td class="txt_l">고등학교</td>
+                                    <th scope="row">종교</th>
+                                    <td class="txt_l">천주교</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">건강행위</th>
+                                    <td colspan="5" class="txt_l">
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk6_15" name="tbl_check6">
+                                            <label for="tchk6_15"><span></span>술(양/종류)</label>
+                                            <input type="text" class="input_custom w40">
+                                        </div><br>
+                                        <div class="checks mt5">
+                                            <input type="checkbox" id="tchk6_15" name="tbl_check6">
+                                            <label for="tchk6_15"><span></span>담배(양/흡연력)</label>
+                                            <input type="text" class="input_custom w40">
+                                        </div><br>
+                                        <div class="checks mt5">
+                                            <input type="checkbox" id="tchk6_15" name="tbl_check6">
+                                            <label for="tchk6_15"><span></span>수면습관 : </label>
+                                            <input type="text" class="input_custom w40">
+                                        </div><br>
+                                        <div class="checks mt5">
+                                            <input type="checkbox" id="tchk6_15" name="tbl_check6">
+                                            <label for="tchk6_15"><span></span>운동습관  : </label>
+                                            <input type="text" class="input_custom w40">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">현 병력</th>
+                                    <td colspan="5"><textarea class="textarea_custom" rows="5"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">과거력</th>
+                                    <td colspan="5" class="txt_l">
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_1" name="tbl_check7">
+                                            <label for="tchk7_1"><span></span>당뇨</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_2" name="tbl_check7">
+                                            <label for="tchk7_2"><span></span>고혈압</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_3" name="tbl_check7">
+                                            <label for="tchk7_3"><span></span>결핵</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_4" name="tbl_check7">
+                                            <label for="tchk7_4"><span></span>간염</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_5" name="tbl_check7">
+                                            <label for="tchk7_5"><span></span>뇌졸중</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_6" name="tbl_check7">
+                                            <label for="tchk7_6"><span></span>치매</label>
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_7" name="tbl_check7">
+                                            <label for="tchk7_7"><span></span>관절염</label>
+                                        </div>
+                                        <div class="checks w20">
+                                            <input type="checkbox" id="tchk7_8" name="tbl_check7">
+                                            <label for="tchk7_8"><span></span>암</label>
+                                            (부위:<input type="text" class="input_custom w50"> )
+                                        </div>
+                                        <div class="checks">
+                                            <input type="checkbox" id="tchk7_9" name="tbl_check7">
+                                            <label for="tchk7_9"><span></span>기타</label>
+                                            <input type="text" class="input_custom w80">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최근 투약상태
+                                        <div class="upload_btn mt5">
+                                            <label for="drugs" class="">최근 복용중인 복용 <br>(처방약) 가져오기</label>
+                                            <input type="file" name="" id="drugs" value="">
+                                        </div>
+                                    </th>
+                                    <td colspan="5"><textarea class="textarea_custom" rows="5"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최근 투약상태</th>
+                                    <td colspan="5" class="txt_l">
+                                        <div class="radio_custom">
+                                            <input type="radio" id="radio2_1" name="radio2"  checked="">
+                                            <label for="radio2_1">무</label>
+                                            <input type="radio" id="radio2_2" name="radio2"  checked="">
+                                            <label for="radio2_2">유</label>
+                                            <input type="text" class="input_custom w40">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">환자정보</th>
+                                    <td colspan="5" class="in_table_wrap">
+                                        <div class="table_type02 in_table">
+                                            <table>
+                                                <caption>입소자 건강수준평가 및 간호기록</caption>
+                                                <colgroup>
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="80%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">의식상태</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div class="radio_custom">
+                                                                <input type="radio" id="radio3_1" name="radio3" checked="">
+                                                                <label for="radio3_1">명료</label>
+                                                                <input type="radio" id="radio3_2" name="radio3">
+                                                                <label for="radio3_2">졸림</label>
+                                                                <input type="radio" id="radio3_3" name="radio3">
+                                                                <label for="radio3_3">질문에만 반응</label>
+                                                                <input type="radio" id="radio3_4" name="radio3">
+                                                                <label for="radio3_4">통증에만 반응</label>
+                                                                <input type="radio" id="radio3_5" name="radio3">
+                                                                <label for="radio3_5">통증에도 반응 없음</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">정서상태</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_1" name="tbl_check8">
+                                                                <label for="tchk8_1"><span></span>안정</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_2" name="tbl_check8">
+                                                                <label for="tchk8_2"><span></span>불안</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_3" name="tbl_check8">
+                                                                <label for="tchk8_3"><span></span>분노</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_4" name="tbl_check8">
+                                                                <label for="tchk8_4"><span></span>슬픔</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_5" name="tbl_check8">
+                                                                <label for="tchk8_5"><span></span>우울</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_6" name="tbl_check8">
+                                                                <label for="tchk8_6"><span></span>거부</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk8_7" name="tbl_check8">
+                                                                <label for="tchk8_7"><span></span>긴장</label>
+                                                            </div>
+                                                            <div class="checks w40">
+                                                                <input type="checkbox" id="tchk8_8" name="tbl_check8">
+                                                                <label for="tchk8_8"><span></span>기타</label>
+                                                                <input type="text" class="input_custom w40">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">활동상태</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div>
+                                                                <div class="radio_custom mb5">
+                                                                    <input type="radio" id="radio3_1" name="radio4" checked="">
+                                                                    <label for="radio4_1">보행가능</label>
+                                                                    <input type="radio" id="radio4_2" name="radio4">
+                                                                    <label for="radio4_2">도움으로 가능</label>
+                                                                    <input type="radio" id="radio4_3" name="radio4">
+                                                                    <label for="radio4_3">완전 의존</label>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="checks w30">
+                                                                    <input type="checkbox" id="tchk9_1" name="tbl_check9">
+                                                                    <label for="tchk9_1"><span></span>마비</label>
+                                                                    (부위:<input type="text" class="input_custom w40"> )
+                                                                </div>
+                                                                <div class="checks w30">
+                                                                    <input type="checkbox" id="tchk9_2" name="tbl_check9">
+                                                                    <label for="tchk9_2"><span></span>감각이상</label>
+                                                                    (부위:<input type="text" class="input_custom w40"> )
+                                                                </div>
+                                                                <div class="checks w30">
+                                                                    <input type="checkbox" id="tchk9_3" name="tbl_check9">
+                                                                    <label for="tchk9_3"><span></span>보조기</label>
+                                                                    (종류:<input type="text" class="input_custom w40"> )
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">호흡기계</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_1" name="tbl_check10">
+                                                                    <label for="tchk10_1"><span></span>호흡곤란</label>
+                                                                </div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_2" name="tbl_check10">
+                                                                    <label for="tchk10_2"><span></span>청색증</label>
+                                                                </div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_3" name="tbl_check10">
+                                                                    <label for="tchk10_3"><span></span>가좌호흡</label>
+                                                                </div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_4" name="tbl_check10">
+                                                                    <label for="tchk10_4"><span></span>기침 :</label>
+                                                                        ( <div class="checks">
+                                                                            <input type="checkbox" id="tchk11_1" name="tbl_check11">
+                                                                            <label for="tchk11_1"><span></span>객담</label>
+                                                                        </div>
+                                                                        <div class="checks">
+                                                                            <input type="checkbox" id="tchk11_2" name="tbl_check11">
+                                                                            <label for="tchk11_2"><span></span>객혈</label> )
+                                                                        </div>
+                                                                        
+                                                                </div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_5" name="tbl_check10">
+                                                                    <label for="tchk10_5"><span></span>통증</label>
+                                                                    (부위:<input type="text" class="input_custom w60"> )                                                                
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt5">
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_6" name="tbl_check10">
+                                                                    <label for="tchk10_6"><span></span>기관지절개관</label>
+                                                                </div>
+                                                                <div class="checks w20">
+                                                                    <input type="checkbox" id="tchk10_7" name="tbl_check10">
+                                                                    <label for="tchk10_7"><span></span>산소사용</label>
+                                                                    <input type="text" class="input_custom w20"> L/min
+                                                                </div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk10_8" name="tbl_check10">
+                                                                    <label for="tchk10_8"><span></span>기타</label>
+                                                                    <input type="text" class="input_custom w60">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">소화기계</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_1" name="tbl_check13">
+                                                                <label for="tchk13_1"><span></span>식욕부진</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_2" name="tbl_check13">
+                                                                <label for="tchk13_2"><span></span>연하장애</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_3" name="tbl_check13">
+                                                                <label for="tchk13_3"><span></span>오심</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_4" name="tbl_check13">
+                                                                <label for="tchk13_4"><span></span>구토</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_5" name="tbl_check13">
+                                                                <label for="tchk13_5"><span></span>변비</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_6" name="tbl_check13">
+                                                                <label for="tchk13_6"><span></span>설사</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk13_7" name="tbl_check13">
+                                                                <label for="tchk13_7"><span></span>통증</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">식이상태</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk14_1" name="tbl_check14">
+                                                                <label for="tchk14_1"><span></span>구강</label>
+                                                                ( <div class="radio_custom">
+                                                                    <input type="radio" id="radio5_1" name="radio5"  checked="">
+                                                                    <label for="radio5_1">정상식,</label>
+                                                                    <input type="radio" id="radio5_2" name="radio5"  checked="">
+                                                                    <label for="radio5_2">치료식</label>
+                                                                    <input type="text" class="input_custom w50">Kcal)
+                                                                </div>                                                           
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk14_2" name="tbl_check14">
+                                                                <label for="tchk14_2"><span></span>위관#</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk14_3" name="tbl_check14">
+                                                                <label for="tchk14_3"><span></span>수액</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">심혈관계</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div class="checks w30">
+                                                                <input type="checkbox" id="tchk15_1" name="tbl_check15">
+                                                                <label for="tchk15_1"><span></span>흉통</label>
+                                                                (부위:<input type="text" class="input_custom w20"> )
+                                                                (양상:<input type="text" class="input_custom w20"> )
+                                                            </div>
+                                                            <div class="checks w20">
+                                                                <input type="checkbox" id="tchk15_2" name="tbl_check15">
+                                                                <label for="tchk15_2"><span></span>부종</label>
+                                                                (부위:<input type="text" class="input_custom w40"> )
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk15_3" name="tbl_check15">
+                                                                <label for="tchk15_3"><span></span>심계항진</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk15_4" name="tbl_check15">
+                                                                <label for="tchk15_4"><span></span>부정맥</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk15_5" name="tbl_check15">
+                                                                <label for="tchk15_5"><span></span>심잡음</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk15_6" name="tbl_check15">
+                                                                <label for="tchk15_6"><span></span>weak pulse</label>
+                                                            </div>
+                                                            <div class="checks w10">
+                                                                <input type="checkbox" id="tchk15_7" name="tbl_check15">
+                                                                <label for="tchk15_7"><span></span>기타</label>
+                                                                <input type="text" class="input_custom w40">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">피부상태</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div class="checks w30">
+                                                                <input type="checkbox" id="tchk16_1" name="tbl_check16">
+                                                                <label for="tchk16_1"><span></span>욕창</label>
+                                                                (크기,부위,정도:( <input type="text" class="input_custom w30"> )
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk16_2" name="tbl_check16">
+                                                                <label for="tchk16_2"><span></span>발진</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk16_3" name="tbl_check16">
+                                                                <label for="tchk16_3"><span></span>소양감</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk16_4" name="tbl_check16">
+                                                                <label for="tchk16_4"><span></span>탈수</label>
+                                                            </div>
+                                                            <div class="checks">
+                                                                <input type="checkbox" id="tchk16_5" name="tbl_check16">
+                                                                <label for="tchk16_5"><span></span>상처</label>
+                                                                (크기,부위,정도:( <input type="text" class="input_custom w20"> )
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">배설기능</th>
+                                                        <th scope="row">소변</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk17_1" name="tbl_check17">
+                                                                    <label for="tchk17_1"><span></span>자연배뇨 :</label>
+                                                                    <input type="text" class="input_custom w20"> 회/일
+                                                                        ( <div class="checks">
+                                                                            <input type="checkbox" id="tchk18_1" name="tbl_check18">
+                                                                            <label for="tchk18_1"><span></span>빈뇨</label>
+                                                                        </div>
+                                                                        <div class="checks">
+                                                                            <input type="checkbox" id="tchk18_2" name="tbl_check18">
+                                                                            <label for="tchk18_2"><span></span>뇨실금</label>
+                                                                        </div>
+                                                                        <div class="checks">
+                                                                            <input type="checkbox" id="tchk18_3" name="tbl_check18">
+                                                                            <label for="tchk18_3"><span></span>배뇨곤란</label>
+                                                                        </div>
+                                                                        <div class="checks">
+                                                                            <input type="checkbox" id="tchk18_4" name="tbl_check18">
+                                                                            <label for="tchk18_4"><span></span>긴박감</label>
+                                                                        </div>
+                                                                        <div class="checks">
+                                                                            <input type="checkbox" id="tchk18_5" name="tbl_check18">
+                                                                            <label for="tchk18_5"><span></span>통증</label>
+                                                                        </div>) 
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk17_2" name="tbl_check17">
+                                                                    <label for="tchk17_2"><span></span>유치도뇨관</label>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="checks w80">
+                                                                    <input type="checkbox" id="tchk17_3" name="tbl_check17">
+                                                                    <label for="tchk17_3"><span></span>색깔 및 양상</label>
+                                                                    ( <div class="checks">
+                                                                        <input type="checkbox" id="tchk19_1" name="tbl_check19">
+                                                                        <label for="tchk19_1"><span></span>정상</label>
+                                                                    </div>
+                                                                    <div class="checks">
+                                                                        <input type="checkbox" id="tchk19_2" name="tbl_check19">
+                                                                        <label for="tchk19_2"><span></span>혈뇨</label>
+                                                                    </div>
+                                                                    <div class="checks">
+                                                                        <input type="checkbox" id="tchk19_3" name="tbl_check19">
+                                                                        <label for="tchk19_3"><span></span>탁한뇨</label>
+                                                                    </div>
+                                                                    <div class="checks">
+                                                                        <input type="checkbox" id="tchk19_4" name="tbl_check19">
+                                                                        <label for="tchk19_4"><span></span>기타</label>
+                                                                        <input type="text" class="input_custom w80"> 
+                                                                    </div>) 
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">대변</th>
+                                                        <td colspan="2" class="txt_l">
+                                                            <div>
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk20_1" name="tbl_check20">
+                                                                    <label for="tchk20_1"><span></span>횟수 :</label>
+                                                                    <input type="text" class="input_custom w20"> 회/
+                                                                    <input type="text" class="input_custom w20"> 일
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt5">
+                                                                <div class="checks">
+                                                                    <input type="checkbox" id="tchk20_1" name="tbl_check20">
+                                                                    <label for="tchk20_1"><span></span>색깔 및 양상</label>
+                                                                    ( <div class="checks">
+                                                                        <input type="checkbox" id="tchk21_1" name="tbl_check21">
+                                                                        <label for="tchk21_1"><span></span>정상</label>
+                                                                    </div>
+                                                                    <div class="checks">
+                                                                        <input type="checkbox" id="tchk21_2" name="tbl_check21">
+                                                                        <label for="tchk21_2"><span></span>혈변</label>
+                                                                    </div>
+                                                                    <div class="checks">
+                                                                        <input type="checkbox" id="tchk21_3" name="tbl_check21">
+                                                                        <label for="tchk21_3"><span></span>기타</label>
+                                                                        <input type="text" class="input_custom w80"> 
+                                                                    </div>) 
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>   
+                                </tr>
+                                <tr>
+                                    <th scope="row">간호계획</th>
+                                    <td colspan="5"><textarea class="textarea_custom" rows="5"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 체위변경표 -->
+                    <div class="title_box">
+                        <h3 class="con_title">체위변경표</a></h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">출력</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>체위변경표</caption>
+                            <colgroup>
+                                <col width="12%">
+                                <col width="11%">
+                                <col width="11%">
+                                <col width="11%">
+                                <col width="11%">
+                                <col width="11%">
+                                <col width="11%">
+                                <col width="11%">
+                                <col width="11%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" rowspan="6">
+                                        <div>
+                                            <div class="select_custom w50">
+                                                <select name="" id="">
+                                                    <option value="">옵션1</option>
+                                                    <option value="">옵션2</option>
+                                                    <option value="">옵션3</option>
+                                                    <option value="">옵션4</option>
+                                                </select>
+                                            </div> 
+                                            <a href="#a" class="btn_type04 white">전체</a>
+                                        </div>
+                                        <div class="mt5">
+                                            <span>3층/강구현</span>
+                                            <a href="#a" class="btn_type04 white">초기화</a>
+                                        </div>
+                                    </th>
+                                    <td>1시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>2시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>3시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>4시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>5시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>6시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>7시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>8시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>10시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>11시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>12시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>13시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>14시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>15시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>16시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>17시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>18시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>19시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>20시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>21시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>22시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>23시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                    <td>24시
+                                        <div class="select_custom w50">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                        분
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                    <td>
+                                        <div class="select_custom">
+                                            <select name="" id="">
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                                <option value="">옵션3</option>
+                                                <option value="">옵션4</option>
+                                            </select>
+                                        </div> 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//체위변경표 -->
+
+
+
+                </div>                
+                <!-- <div class="save_btn">
+                    <a href="#a">저장</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+    </script>
+</body>
+</html>

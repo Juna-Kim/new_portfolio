@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>간호사-자료관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
+</head>
+<body>
+    <div class="wrap bg_green">
+
+        <div class="left_area">
+            <div class="left_top">
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <a href="#a" class="btn_type02">수급자 신규등록</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                </div>
+                <div class="checks">
+                    <input type="checkbox" id="chk_a1">
+                    <label for="chk_a1"><span></span>퇴소자 포함</label>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="49px">
+                            <col width="82px">
+                            <col width="124px">
+                            <col width="49px">
+                            <col width="53px">
+                            <col width="51px">
+                            <col width="64px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">입소자<br>성명</th>
+                                <th scope="col">입소(예정)일</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">나이</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">본인<br>부담률</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="49px">
+                            <col width="82px">
+                            <col width="124px">
+                            <col width="49px">
+                            <col width="53px">
+                            <col width="51px">
+                            <col width="64px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                            <tr>
+                                <td>1</td>
+                                <td>박성은</td>
+                                <td>2021.02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr> 
+                          
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area type1">
+            <div class="right_top">
+                <div class="pic_area">
+                    <!-- 이미지 없을때 -->
+                    <!-- <div class="picture">
+                        <img src="images/pic_none_green.png" alt="기본 이미지">
+                    </div>
+                    <div class="upload_btn">
+                        <label for="pic_upload" class="">사진등록</label>
+                        <input type="file" name="" id="pic_upload" value="">
+                    </div> -->
+                    <!-- 이미지 있을때 -->
+                    <div class="picture">
+                        <img src="images/pic.png" alt="기본 이미지">
+                    </div>
+                    <p class="pic_name">할머니.png <br>5920byte</p>
+
+                    <div class="delete_ico"><a href="#a"><span class="blind">이미지 삭제</span></a></div>
+                </div>
+                <div class="data_area">
+                    <ul>
+                        <li class="first_box">
+                            <dl>
+                                <dt>입소자성명</dt>
+                                <dd>
+                                    간미희
+                                    <div class="radio_custom ml10">
+                                        <input type="radio" name="radio0" id="select1" checked=""><label for="select1">남</label>
+                                        <input type="radio" name="radio0" id="select2"><label for="select2">여</label>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>입소자(예정)일</dt>
+                                <dd>2018.03.01 10:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>법적생년월일</dt>
+                                <dd>250611</dd>
+                            </dl>
+                            <dl>
+                                <dt>생활실(층)</dt>
+                                <dd>1층 호실 - 101호</dd>
+                            </dl>
+                        </li>
+                        <li class="second_box">
+                            <dl>
+                                <dt>실제나이/생일</dt>
+                                <dd>98/1924.11.01
+                                    ( <div class="radio_custom">
+                                        <input type="radio" name="radio1" id="select1_1" checked=""><label for="select1_1">음</label>
+                                        <input type="radio" name="radio1" id="select1_2"><label for="select1_2">양</label>)
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>입소구분</dt>
+                                <dd>
+                                    <div class="radio_custom">
+                                        <input type="radio" name="radio2" id="select2_1" checked=""><label for="select2_1">일반</label>
+                                        <input type="radio" name="radio2" id="select2_2"><label for="select2_2">치매전담</label>
+                                    </div>
+                                    2020.05.20
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>퇴소일</dt>
+                                <dd>2020.01.06  03:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>사망일</dt>
+                                <dd>2020.01.06  03:00</dd>
+                            </dl>
+                            <!-- <dl>
+                                <dt>퇴소사유</dt>
+                                <dd class="select_dd">
+                                    <div class="select_custom">
+                                        <select name="" id="">
+                                            <option value="">옵션1</option>
+                                            <option value="">옵션2</option>
+                                            <option value="">옵션3</option>
+                                            <option value="">옵션4</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                            </dl> -->
+                        </li>
+                        <li class="third_box">
+                            <dl>
+                                <dt>본인부담률(현재)</dt>
+                                <dd>8%(기타경감자)/8%/2020.09.16</dd>
+                            </dl>
+                            <dl>
+                                <dt>등급판정결과</dt>
+                                <dd>2등급</dd>
+                            </dl>
+                            <dl>
+                                <dt>장기요양인정번호</dt>
+                                <dd>L0011476639-100</dd>
+                            </dl>
+                            <dl>
+                                <dt>인정유효기간</dt>
+                                <dd>시작 2018.03.01~종료 2021.12.31</dd>
+                            </dl>
+                            <!-- <dl>
+                                <dt>질병</dt>
+                                <dd>치매, 고혈압, 당뇨</dd>
+                            </dl> -->
+                        </li>
+                        <li class="fourth_box">
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>8%(기타경감자)/8%/2020.09.16</dd>
+                            </dl>
+                            <dl>
+                                <dt>학력</dt>
+                                <dd>2등급</dd>
+                            </dl>
+                            <dl>
+                                <dt>한글해독가능</dt>
+                                <dd>L0011476639-100</dd>
+                            </dl>
+                            <dl>
+                                <dt>종교</dt>
+                                <dd class="select_dd">
+                                    <div class="select_custom mr10 w40">
+                                        <select name="" id="">
+                                            <option value="">천주교</option>
+                                            <option value="">옵션2</option>
+                                            <option value="">옵션3</option>
+                                            <option value="">옵션4</option>
+                                        </select>
+                                    </div>
+                                    세레명/법명 : 데레사
+                                </dd>
+                            </dl>
+                            <!-- <dl>
+                                <dt>결혼여부</dt>
+                                <dd>시작 2018.03.01~종료 2021.12.31</dd>
+                            </dl> -->
+                            <!-- <dl>
+                                <dt>입소사유</dt>
+                                <dd>치매로 혼자생활이 불가능하고 배회가 심해서 가족치매로 혼자생활이 불가능하고 배회가 심해서 가족</dd>
+                            </dl> -->
+                        </li>
+                        <li class="last_box">
+                            <dl>
+                                <dt>입소시 질병유형</dt>
+                                <dd>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f1" name="chk_f">
+                                        <label for="chk_f1"><span></span>위십이지장궤양</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f2" name="chk_f">
+                                        <label for="chk_f2"><span></span>뇌졸증</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f3" name="chk_f">
+                                        <label for="chk_f3"><span></span>고혈압</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f4" name="chk_f">
+                                        <label for="chk_f4"><span></span>신부전증</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f5" name="chk_f">
+                                        <label for="chk_f5"><span></span>폐렴</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f6" name="chk_f">
+                                        <label for="chk_f6"><span></span>폐결핵</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f7" name="chk_f">
+                                        <label for="chk_f7"><span></span>관절염</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f8" name="chk_f">
+                                        <label for="chk_f8"><span></span>신경통</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f9" name="chk_f">
+                                        <label for="chk_f9"><span></span>골다공증</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f10" name="chk_f">
+                                        <label for="chk_f10"><span></span>백내장</label>
+                                    </div>
+
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f11" name="chk_f">
+                                        <label for="chk_f11"><span></span>녹내장</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f12" name="chk_f">
+                                        <label for="chk_f12"><span></span>당뇨병</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f13" name="chk_f">
+                                        <label for="chk_f13"><span></span>치매</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f14" name="chk_f">
+                                        <label for="chk_f14"><span></span>파키슨병</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk_f15" name="chk_f">
+                                        <label for="chk_f15"><span></span>기타 입소시 질병유형</label>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right_bottom">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>보호자정보</a></li>
+                        <li><a href="#a"><span></span>가계도</a></li>
+                        <li><a href="#a"><span></span>이력관리</a></li>
+                        <li><a href="#a"><span></span>자료제공</a></li>
+                        <li><a href="#a"><span></span>표준약관</a></li>
+                        <li><a href="#a"><span></span>제출서류</a></li>
+                        <li><a href="#a"><span></span>수급자제재<br>동의서</a></li>
+                        <li><a href="#a"><span></span>입퇴소확인서<br>연계기록지</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+                    
+                    <h3 class="con_title">상세내용</h3>
+                    <div class="detail_box">
+                        <div class="title_box">
+                            <h4 class="sub_title">제2조[계약기간]</h4>
+                            <div class="title_right_btn">
+                                <div class="guard_view">
+                                    <a href="#a" class="btn_type04" id="guard_pop_view">보호자 보기</a>
+                                    <div class="write_date">
+                                        <span>작성일 : </span><input type="text" class="input_custom w60" placeholder="2020.11.06">
+                                    </div>
+                                    <div class="guard_pop" style="display:none;">
+                                        <h5 class="guard_pop_title">보호자 목록</h5>
+                                        <span class="guard_pop_text">연락처를 선택해주세요.</span>
+                                        <a href="#a" class="btn_type01 guard_pop_close">닫기</a>
+                                        <div class="table_type02">
+                                            <table>
+                                                <caption>보호자 목록</caption>
+                                                <colgroup>
+                                                    <col width="15%">
+                                                    <col width="45%">
+                                                    <col width="25%">
+                                                    <col width="15%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">보호자성명</th>
+                                                        <th scope="col">자택</th>
+                                                        <th scope="col">H.P</th>
+                                                        <th scope="col">관계</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                    <td>이금비</td>
+                                                    <td></td>
+                                                    <td>00-9122-0783</td>
+                                                    <td>아내</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>이금비</td>
+                                                        <td></td>
+                                                        <td>00-9122-0783</td>
+                                                        <td>아내</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>이금비</td>
+                                                        <td></td>
+                                                        <td>00-9122-0783</td>
+                                                        <td>아내</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>이금비</td>
+                                                        <td></td>
+                                                        <td>00-9122-0783</td>
+                                                        <td>아내</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <ul>
+                            <li>1항. 계약기간은 <input type="text" class="input_custom w10"> 부터 <input type="text" class="input_custom w10"> 까지로 한다.</li>
+                        </ul>
+                        <h4 class="sub_title">제3조[입소,이용료 납부]</h4>
+                        <ul>
+                            <li>1항. ‘갑’의 입소당월 이용료는 <input type="text" class="input_custom w10"> 에 납부하기로 한다. 입소당월 이후 매월 이용료는 매월
+                                <div class="select_custom w10">
+                                    <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                    </select>
+                                </div>
+                                일에 납부하기로 한다.(납부일이 공휴일인 경우 그 익일로 한다.)
+                            </li>
+                            <li>2항. ‘갑’의 이용료 납부방법은 <input type="text" class="input_custom w10"> 로 한다.</li>
+                        </ul>
+
+                        <h4 class="sub_title">시설급여(1일)<a href="#a" class="btn_type04">급여비용 가져오기</a></h4>
+                        <div class="select_custom w10 mb10">
+                            <select name="" id="">
+                                <option value="">구 노인복지법</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="orgin_table mb10">
+                            <table>
+                                <caption>시설급여(1일)</caption>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="30%">
+                                    <col width="50%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="4">비급여</th>
+                                        <th scope="row">상급침실 이용료</th>
+                                        <td><input type="text" class="input_custom w40 mr10"><input type="text" class="input_custom w40"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">식재료비(1식)</th>
+                                        <td><input type="text" class="input_custom w40 mr10"><input type="text" class="input_custom w40"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            간식비(1회) 제공횟수)
+                                            <div class="radio_custom">
+                                                <input type="radio" id="ra1_1" checked="" name="ra1" >
+                                                <label for="ra1_1">1회</label>
+                                                <input type="radio" id="ra1_2" name="ra1" >
+                                                <label for="ra1_2">2회</label>
+                                                <input type="radio" id="ra1_3" name="ra1" >
+                                                <label for="ra1_3">3회</label>
+                                                <input type="radio" id="ra1_4" name="ra1" >
+                                                <label for="ra1_4">4회</label>
+                                            </div>
+                                        </th>
+                                        <td><input type="text" class="input_custom w40 mr10"><input type="text" class="input_custom w40"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이/미용료 등</th>
+                                        <td><input type="text" class="input_custom w40 mr10"><input type="text" class="input_custom w40"></td>
+                                    </tr>
+                            </table>
+                        </div>
+
+                        <h4 class="sub_title">특약사항<a href="#a" class="btn_type04">기관정보에서 불러오기</a></h4>
+                        <div>
+                            <textarea name="" id="" rows="10" class="textarea_custom"></textarea>
+                        </div>
+                        
+                    </div>
+
+                    <h3 class="con_title">개인정보 수집 및 활용 동의서</h3>                    
+                    <div class="detail_box">
+
+                        <div class="title_box">
+                            <h4 class="sub_title">1. 수집 및 이용목적</h4>
+                            <div class="title_right_btn">
+                                <a href="#a" class="btn_type04">이용자 서명</a>
+                                <a href="#a" class="btn_type04">보호자 서명</a>
+                                <a href="#a" class="btn_type04">시설장 서명</a>
+                            </div>
+                        </div> 
+                        <ul>
+                            <li>- 대상자 급여관련에 필요한 정보의 활용</li>
+                            <li>- 제공기관 간의 서비스 연계와 관련사항에 관한 대상자 정보 제공</li>
+                            <li>- 관련기관 정보제공 요청 시 제공</li>
+                            <li>- 장기요양계획, 욕구조사, 장기요양서비스 질 수준 향상 등에 활용</li>
+                        </ul>
+                        <h4 class="sub_title">2. 수집항목</h4>
+                        <ul>
+                            <li>- 장기요양급여 관련 정보</li>
+                            <li>- 이용자의 지역연계 관련 정보</li>
+                            <li>- 관련기관 정보제공 요청 시 필요한 정보</li>
+                            <li>- 기타 목적사업 수행에 필요한 정보</li>
+                            <li>- 개인정보의 보유 및 이용기간</li>
+                        </ul>
+                        <h4 class="sub_title">3. 개인정보의 보유 및 이용기간</h4>
+                        <ul>
+                            <li>- 수급자의 급여제공에 관한 자료 등 개인정보 자료는 노인장기요양보험법 시행규칙 제 27조에 따라 급여가 종료된 날로부터
+                                5년간 보유(보존)하고, <br> 수집한 개인정보 항목의 이용기간은 급여계약 종료일까지로 함
+                            </li>
+                        </ul>
+                        
+                        <div class="detail_agree">
+                            <p>상기 본인은 개인정보를 제공하고 활용하는 것에 동의합니다.</p>
+                            <p>* 아래는 시설별 또는 개인별 고유.특별 약관이 있을 시 작성합니다.<a href="#a" class="btn_type04">기관정보에서 불러오기</a></p>
+                            <p><textarea name="" id="" rows="5" class="textarea_custom"></textarea></p>
+                        </div>
+
+                    </div>
+
+                    <div class="title_box">
+                        <h3 class="con_title">계약현황</h3> 
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 white">출력</a>
+                        </div>
+                    </div>
+                    <div class="table_type02">
+                        <table>
+                            <caption>계약현황</caption>
+                            <colgroup>
+                                <col width="5%">
+                                <col width="10%">
+                                <col width="20%">
+                                <col width="25%">
+                                <col width="10%">
+                                <col width="5%">
+                                <col width="25%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">계약일자</th>
+                                    <th scope="col">계약기간</th>
+                                    <th scope="col">보호자성명</th>
+                                    <th scope="col">관계</th>
+                                    <th scope="col">연락처</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   <td>
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="check1_1" name="tbl_check1">
+                                            <label for="check1_1"><span></span></label>
+                                        </div>
+                                   </td>
+                                   <td>1</td>
+                                   <td>2018.02.01</td>
+                                   <td>2019.01.01 ~ 2019.12.31</td>
+                                   <td>엄기훈</td>
+                                   <td>딸</td>
+                                   <td>070-2342-2312 / 010-3323-1111</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         <div class="checks_type3">
+                                             <input type="checkbox" id="check1_1" name="tbl_check1">
+                                             <label for="check1_1"><span></span></label>
+                                         </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="save_btn">
+                    <a href="#a">저장</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#layer_pop').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+
+
+        $('#guard_pop_view').click(function(){
+            $('.guard_pop').toggle();
+        });
+        
+        $('.guard_pop_close').click(function(){
+            $('.guard_pop').hide();
+        });
+    </script>
+</body>
+</html>

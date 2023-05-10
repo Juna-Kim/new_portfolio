@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-간호관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 1 );
+            $(".datepicker").datepicker('setDate',new Date());
+
+            setDatePicker("#datepicker");
+            setDatePicker("#datepicker1");
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="wrap"> 
+        <div class="layer_dim"></div> <!--팝업창 뒷배경 -->
+        <div class="left_area">
+            <div class="left_top">
+
+                <div class="left_date_select mb10">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <a href="#a" class="btn_type02" id="layer_pop2">수급자  상태검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                </div>
+                <div class="checks">
+                    <input type="checkbox" id="chk_a1">
+                    <label for="chk_a1"><span></span>퇴소자 포함</label>
+                </div>
+            </div>
+            <div class="left_table manage_left_tbl">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">어르신명</th>
+                                <th scope="col">입소일<br>(퇴소일)</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">식사</th>
+                                <th scope="col">배설</th>
+                                <th scope="col">투약</th>
+                                <th scope="col">욕창점수</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top">
+        
+                <div class="manage_pic">
+                    <div class="manage_picture">
+                        <img src="images/pic.png" alt="입소자 이미지">
+                    </div>
+                    <ul class="pic_text">
+                        <li><span>생활실</span>2층 호실,102호</li>
+                        <li><span>입소자성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31-26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                    </ul>
+                </div>
+
+                <div class="manage_data">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>평가일</dt>
+                                <dd>2020.03.01</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위변경</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창부위</dt>
+                                <dd>대전자(L),천골,미골,팔꿈치(L) </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>외상/자립상태</dt>
+                                <dd>준와상</dd>
+                            </dl>
+                            <dl>
+                                <dt>비위관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>식사</dt>
+                                <dd>죽</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>질병</dt>
+                                <dd>치매,중풍</dd>
+                            </dl>
+                            <dl>
+                                <dt>유치도뇨관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>배설</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>수급자상태</dt>
+                                <dd>틀니(부분), 방광루</dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창방지도구</dt>
+                                <dd>매트리스, 방석, 쿠션</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위</dt>
+                                <dd>유치도뇨관</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="right_bottom type2">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>간호처치</a></li>
+                        <li><a href="#a"><span></span>건강관리</a></li>
+                        <li><a href="#a"><span></span>투약관리</a></li>
+                        <li><a href="#a"><span></span>욕창관리</a></li>
+                        <li><a href="#a"><span></span>구강관리</a></li>
+                        <li><a href="#a"><span></span>의사진료</a></li>
+                        <li><a href="#a"><span></span>욕창.낙상<br>위험도평가</a></li>
+                        <li><a href="#a"><span></span>건강수준평가<br>및 간호기록</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+
+                    <div class="title_box mt35">
+                        <h3 class="con_title">투약일지</h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">복용약 내역</a>
+                        </div>
+                    </div>
+                    <p class="text_explain fc_purple">*'해당월 전체선택' 버튼은 입소자 미선택 상태로 저장시 입력된 날짜의 모든 입소자가 자동체크, 제공자는 현재 제공자가 입력됩니다.</p>
+
+                    <div class="title_box type_bd">
+                        <div class="box_radio">
+                            <div class="radio_custom">
+                                <input type="radio" id="radio1_1" name="rd1" checked="">
+                                <label for="radio1_1">아침(식전,식후)</label>
+                                <input type="radio" id="radio1_2" name="rd1">
+                                <label for="radio1_2">점심(식전,식후)</label>
+                                <input type="radio" id="radio1_3" name="rd1">
+                                <label for="radio1_3">저녁(식전,식후)</label>
+                                <input type="radio" id="radio1_4" name="rd1">
+                                <label for="radio1_4">취침전</label>
+                            </div>
+                            <a href="#a" class="btn_type04">기초정보생성</a>
+                            <p class="fc_purple mt5">기초정보생성은 바로 전날 기록을 가져오며, 이미 투약기록이 된 것은 제외합니다.</p>
+                        </div>
+                        <div class="title_right_btn txt_r">
+                            <div class="box_search">
+                                <input type="text" class="date_input hasDatepicker w40" id="datepicker">
+                                <div class="checks">
+                                    <input type="checkbox" id="chk1" name="chk_1">
+                                    <label for="chk1"><span></span>해당월 전체 선택</label>
+                                </div>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" id="chk2" name="chk_2">
+                                <label for="chk2"><span></span>시간직접입력</label>
+                            </div>
+                            <a href="#a" class="btn_type04">한눈에보기</a>
+                            <a href="#a" class="btn_type04">검색</a>
+                        </div>
+                    </div>
+
+                    <div class="table_type02 mb10">
+                        <table>
+                            <caption>투약일지</caption>
+                            <colgroup>
+                                <col width="20%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">기간</th>
+                                    <th scope="col">약품명</th>
+                                    <th scope="col">약품 효능 및 투약방법</th>
+                                    <th scope="col">투약구분</th>
+                                    <th scope="col">아침</th>
+                                    <th scope="col">점심</th>
+                                    <th scope="col">저녁</th>
+                                    <th scope="col">취침전</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020-07-01~2021-04-20</td>
+                                    <td>노바스크5mg</td>
+                                    <td>혈압약-구강</td>
+                                    <td>정기</td>
+                                    <td>Y</td>
+                                    <td>Y</td>
+                                    <td>N</td>
+                                    <td>Y</td>
+                                </tr>
+                                <tr>
+                                    <td>2020-07-01~2021-04-20</td>
+                                    <td>노바스크5mg</td>
+                                    <td>혈압약-구강</td>
+                                    <td>정기</td>
+                                    <td>Y</td>
+                                    <td>Y</td>
+                                    <td>N</td>
+                                    <td>Y</td>
+                                </tr>
+                                <tr>
+                                    <td>2020-07-01~2021-04-20</td>
+                                    <td>노바스크5mg</td>
+                                    <td>혈압약-구강</td>
+                                    <td>정기</td>
+                                    <td>Y</td>
+                                    <td>Y</td>
+                                    <td>N</td>
+                                    <td>Y</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>투약일지 입력표</caption>
+                            <colgroup>
+                                <col width="2.6%">
+                                <col width="2.6%">
+                                <col width="14%">
+                                <col width="14%">
+                                <col width="2.6%">
+                                <col width="2.6%">
+                                <col width="14%">
+                                <col width="14%">
+                                <col width="2.6%">
+                                <col width="2.6%">
+                                <col width="14%">
+                                <col width="14%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">일자</th>
+                                    <th scope="col" rowspan="2">투약여부</th>
+                                    <th scope="col" colspan="2">제공자</th>
+                                    <th scope="col" rowspan="2">일자</th>
+                                    <th scope="col" rowspan="2">투약여부</th>
+                                    <th scope="col" colspan="2">제공자</th>
+                                    <th scope="col" rowspan="2">일자</th>
+                                    <th scope="col" rowspan="2">투약여부</th>
+                                    <th scope="col" colspan="2">제공자</th>
+                                </tr> 
+                                <tr>
+                                    <th scope="col">식전</th>
+                                    <th scope="col">식후</th>
+                                    <th scope="col">식전</th>
+                                    <th scope="col">식후</th>
+                                    <th scope="col">식전</th>
+                                    <th scope="col">식후</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" rowspan="4">1</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk1_1" name="tbl_chk1">
+                                            <label for="chk1_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <th scope="row" rowspan="4">2</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                            <label for="chk2_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <th scope="row" rowspan="4">3</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk3_1" name="tbl_chk3">
+                                            <label for="chk3_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row" rowspan="4">4</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk4_1" name="tbl_chk4">
+                                            <label for="chk4_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <th scope="row" rowspan="4">5</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk5_1" name="tbl_chk5">
+                                            <label for="chk5_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <th scope="row" rowspan="4">6</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk6_1" name="tbl_chk6">
+                                            <label for="chk6_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+
+                                <tr class="bb_none">
+                                    <th scope="row" rowspan="4">7</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk7_1" name="tbl_chk7">
+                                            <label for="chk7_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <th scope="row" rowspan="4">8</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk8_1" name="tbl_chk8">
+                                            <label for="chk8_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <th scope="row" rowspan="4">9</th>
+                                    <th scope="row" rowspan="4">
+                                        <div class="checks_type3">
+                                            <input type="checkbox" id="chk9_1" name="tbl_chk9">
+                                            <label for="chk9_1"><span></span></label>
+                                        </div>
+                                    </th>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <input type="text" class="input_custom w20"> :
+                                        <input type="text" class="input_custom w20">
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>  
+                    
+                </div>
+
+                 <!-- 공통 모달 팝업창 -->
+                 <div class="common_popup">
+                    <div class="layer_cont">
+                        <button type="button" class="common_close"><span class="blind">닫기</span></button>
+                        <!-- 여기서부터 복용(처방)약 내역 조회화면 -->
+                        <div class="title_box mt20">
+                            <h3 class="con_title">복용(처방)약 내역</h3>
+                            <div class="title_right_btn">
+                                <a href="#a" class="btn_type03 bg_light_purple">복용(처방)약 종료10일전 목록</a>
+                            </div>
+                        </div>
+                        <div class="text_line_two">
+                            <p class="line_l fc_red">*정기적으로 드시는 약은 종료일만 변경합니다.</p>
+                            <p class="line_r fc_purple">*'입력/수정' 버튼을 누르면 수정할 수 있으며 '줄추가'를 하면 새로운 약을 등록할 수 있습니다.</p>
+                        </div>
+                        <div class="title_box type_bd">
+                            <div class="date_select">                                  
+                                <input type="text" class="date_input" id="datepicker"> ~ 
+                                <input type="text" class="date_input" id="datepicker1">
+                            </div>
+                            <div class="title_right_btn pt5">
+                                <a href="#a" class="btn_type04">검색</a>
+                                <a href="#a" class="btn_type04">입력/수정</a>
+                            </div>
+                        </div>
+                        <div class="table_type02 mb20">
+                            <table>
+                                <caption>복욕(처방)약 내역</caption>
+                                <colgroup>
+                                    <col width="3%">
+                                    <col width="9%">
+                                    <col width="9%">
+                                    <col width="7%">
+                                    <col width="7%">
+                                    <col width="12%">
+                                    <col width="3%">
+                                    <col width="6%">
+                                    <col width="6%">
+                                    <col width="6%">
+                                    
+                                    <col width="6%">
+                                    <col width="6%">
+                                    <col width="20%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">투약시작일<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">투약종료일<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">투약구분</th>
+                                        <th scope="col">사진</th>
+                                        <th scope="col" colspan="2">약명<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">아침<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">점심<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">저녁<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">취침전<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">작성자<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                        <th scope="col">약물효능 및 투약방법 등 기타사항<a href="#a" class="click_align"><span class="blind">정렬</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2020-01-01</td>
+                                        <td>2021-04-30</td>
+                                        <td>정기</td>
+                                        <td></td>
+                                        <td>*알렌맥스플러스디정2T</td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#a"><span class="blind">삭제</span></a>
+                                            </div>
+                                        </td>
+                                        <td>N</td>
+                                        <td>Y</td>
+                                        <td>N</td>
+                                        <td>Y</td>
+                                        <td>표수지</td>
+                                        <td>골다공증약-구강(전주병원 퇴원약/1회만 복용)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2020-01-01</td>
+                                        <td>2021-04-30</td>
+                                        <td>정기</td>
+                                        <td></td>
+                                        <td>*알렌맥스플러스디정2T</td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#a"><span class="blind">삭제</span></a>
+                                            </div>
+                                        </td>
+                                        <td>N</td>
+                                        <td>Y</td>
+                                        <td>N</td>
+                                        <td>Y</td>
+                                        <td>표수지</td>
+                                        <td>골다공증약-구강(전주병원 퇴원약/1회만 복용)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2020-01-01</td>
+                                        <td>2021-04-30</td>
+                                        <td>정기</td>
+                                        <td></td>
+                                        <td>*알렌맥스플러스디정2T</td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#a"><span class="blind">삭제</span></a>
+                                            </div>
+                                        </td>
+                                        <td>N</td>
+                                        <td>Y</td>
+                                        <td>N</td>
+                                        <td>Y</td>
+                                        <td>표수지</td>
+                                        <td>골다공증약-구강(전주병원 퇴원약/1회만 복용)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //복용(처방)약 내역 조회화면 -->
+                        <!-- 복용(처방)약 내역 입력화면-->
+                        <div class="title_box">
+                            <h3 class="con_title">복용(처방)약 내역</h3>
+                            <div class="title_right_btn">
+                                <a href="#a" class="btn_type03 bg_light_purple">복용(처방)약 종료10일전 목록</a>
+                            </div>
+                        </div>
+                        <div class="text_line_two">
+                            <p class="line_l fc_red">*정기적으로 드시는 약은 종료일만 변경합니다.</p>
+                            <p class="line_r fc_purple">*'입력/수정' 버튼을 누르면 수정할 수 있으며 '줄추가'를 하면 새로운 약을 등록할 수 있습니다.</p>
+                        </div>
+                        <div class="title_box type_bd">
+                            <div class="date_select">                                  
+                                <input type="text" class="date_input" id="datepicker"> ~ 
+                                <input type="text" class="date_input" id="datepicker1">
+                            </div>
+                            <div class="title_right_btn type02 txt_r">
+                                <span>(투약시작일~투약종료일)</span>
+                                <div class="date_select ml5">                                  
+                                    <input type="text" class="date_input" id="datepicker"> ~ 
+                                    <input type="text" class="date_input" id="datepicker1">
+                                </div>
+                                <a href="#a" class="btn_type04">일괄적용</a>
+                                <span class="ml5">줄수 </span>
+                                <input type="text" class="input_custom w10">
+                                <a href="#a" class="btn_type04">줄추가</a>
+                                <a href="#a" class="btn_type04">저장</a>
+                                <a href="#a" class="btn_type04">취소</a>
+                            </div>
+                        </div>
+                        <div class="table_type02">
+                            <table>
+                                <caption>복욕(처방)약 내역</caption>
+                                <colgroup>
+                                    <col width="3%">
+                                    <col width="8%">
+                                    <col width="9%">
+                                    <col width="9%">
+                                    <col width="7%">
+                                    <col width="9%">
+                                    <col width="8%">
+                                    <col width="3%">
+
+                                    <col width="6%">
+                                    <col width="6%">
+                                    <col width="6%">
+                                    <col width="6%">
+                                    
+                                    <col width="10%">
+                                    <col width="10%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">입소자성명</th>
+                                        <th scope="col">투약시작일
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check1_1" name="tbl_check1">
+                                                <label for="check1_1"><span></span></label>
+                                            </div>
+                                        </th>
+                                        <th scope="col">투약종료일
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check2_1" name="tbl_check2">
+                                                <label for="check2_1"><span></span></label>
+                                            </div>
+                                        </th>
+                                        <th scope="col">투약구분</th>
+                                        <th scope="col">사진</th>
+                                        <th scope="col" colspan="2">약명</th>
+                                        <th scope="col">아침</th>
+                                        <th scope="col">점심</th>
+                                        <th scope="col">저녁</th>
+                                        <th scope="col">취침전</th>
+                                        <th scope="col">작성자</th>
+                                        <th scope="col">약물효능 및 투약방법 등 기타사항</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>3층/강구현</td>
+                                        <td>
+                                            <input type="text" class="input_custom w80">
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check3_1" name="tbl_check3">
+                                                <label for="check3_1"><span></span></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="input_custom w80">
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check4_1" name="tbl_check4">
+                                                <label for="check4_1"><span></span></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select_custom">
+                                                <select name="" id="">
+                                                    <option value="">옵션1</option>
+                                                    <option value="">옵션2</option>
+                                                    <option value="">옵션3</option>
+                                                    <option value="">옵션4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="filebox g_color">
+                                                <label for="ex_filename"class="">파일찾기</label>
+                                                <input class="upload_name w80 mt5" value="선택된 파일 없음" disabled="" title="가계도 파일첨부">
+                                                <input type="file" id="ex_filename" class="upload-hidden" title="가계도 파일첨부">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <textarea class="textarea_custom mb5" rows="5"></textarea>
+                                            <a href="#a" class="search_btn"><span class="blind">찾기버튼</span>
+                                        </td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#a"><span class="blind">삭제</span></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select1_1" name="radio1" checked="">
+                                                    <label for="select1_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select1_2" name="radio1">
+                                                    <label for="select1_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select2_1" name="radio2" checked="">
+                                                    <label for="select2_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select2_2" name="radio2">
+                                                    <label for="select2_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select3_1" name="radio3" checked="">
+                                                    <label for="select3_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select3_2" name="radio3">
+                                                    <label for="select3_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select4_1" name="radio4" checked="">
+                                                    <label for="select4_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select4_2" name="radio4">
+                                                    <label for="select4_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="input_custom"></td>
+                                        <td><input type="text" class="input_custom"></td>
+                                    </tr>   
+                                    <tr>
+                                        <td>1</td>
+                                        <td>3층/강구현</td>
+                                        <td>
+                                            <input type="text" class="input_custom w80">
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check3_1" name="tbl_check3">
+                                                <label for="check3_1"><span></span></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="input_custom w80">
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check4_1" name="tbl_check4">
+                                                <label for="check4_1"><span></span></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select_custom">
+                                                <select name="" id="">
+                                                    <option value="">옵션1</option>
+                                                    <option value="">옵션2</option>
+                                                    <option value="">옵션3</option>
+                                                    <option value="">옵션4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="filebox g_color">
+                                                <label for="ex_filename"class="">파일찾기</label>
+                                                <input class="upload_name w80 mt5" value="선택된 파일 없음" disabled="" title="가계도 파일첨부">
+                                                <input type="file" id="ex_filename" class="upload-hidden" title="가계도 파일첨부">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <textarea class="textarea_custom mb5" rows="5"></textarea>
+                                            <a href="#a" class="search_btn"><span class="blind">찾기버튼</span>
+                                        </td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#a"><span class="blind">삭제</span></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select5_1" name="radio5" checked="">
+                                                    <label for="select5_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select5_2" name="radio5">
+                                                    <label for="select5_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select6_1" name="radio6" checked="">
+                                                    <label for="select6_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select6_2" name="radio6">
+                                                    <label for="select6_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select7_1" name="radio7" checked="">
+                                                    <label for="select7_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select7_2" name="radio7">
+                                                    <label for="select7_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select8_1" name="radio8" checked="">
+                                                    <label for="select8_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select8_2" name="radio8">
+                                                    <label for="select8_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="input_custom"></td>
+                                        <td><input type="text" class="input_custom"></td>
+                                    </tr>  
+                                    <tr>
+                                        <td>1</td>
+                                        <td>3층/강구현</td>
+                                        <td>
+                                            <input type="text" class="input_custom w80">
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check3_1" name="tbl_check3">
+                                                <label for="check3_1"><span></span></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="input_custom w80">
+                                            <div class="checks_type3 ckeck_b">
+                                                <input type="checkbox" id="check4_1" name="tbl_check4">
+                                                <label for="check4_1"><span></span></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select_custom">
+                                                <select name="" id="">
+                                                    <option value="">옵션1</option>
+                                                    <option value="">옵션2</option>
+                                                    <option value="">옵션3</option>
+                                                    <option value="">옵션4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="filebox g_color">
+                                                <label for="ex_filename"class="">파일찾기</label>
+                                                <input class="upload_name w80 mt5" value="선택된 파일 없음" disabled="" title="가계도 파일첨부">
+                                                <input type="file" id="ex_filename" class="upload-hidden" title="가계도 파일첨부">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <textarea class="textarea_custom mb5" rows="5"></textarea>
+                                            <a href="#a" class="search_btn"><span class="blind">찾기버튼</span>
+                                        </td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#a"><span class="blind">삭제</span></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select9_1" name="radio9" checked="">
+                                                    <label for="select9_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select9_2" name="radio9">
+                                                    <label for="select9_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select10_1" name="radio10" checked="">
+                                                    <label for="select10_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select10_2" name="radio10">
+                                                    <label for="select10_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select11_1" name="radio11" checked="">
+                                                    <label for="select11_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select11_2" name="radio11">
+                                                    <label for="select11_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_custom">
+                                                <div class="mb5">
+                                                    <input type="radio" id="select12_1" name="radio12" checked="">
+                                                    <label for="select12_1">N</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="select12_2" name="radio12">
+                                                    <label for="select12_2">Y</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="input_custom"></td>
+                                        <td><input type="text" class="input_custom"></td>
+                                    </tr>       
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//팝업창 -->
+
+                <div class="save_btn">
+                    <a href="#a">저장</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/*******************************************************************
+default
+********************************************************************/
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+input[type=button], input[type=text], input[type=image], input[type=submit], textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+/* IE6 */
+:first-child + html .clearFix {
+  zoom: 1;
+}
+
+/* IE7 */
+.hide, .hidden, .blind, caption, legend {
+  opacity: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+img {
+  display: block;
+}
+
+.clearFix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+* html .clearFix {
+  zoom: 1;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+body {
+  -webkit-text-size-adjust: none;
+}
+
+input[type='text'], input[type='password'], input[type='submit'], input[type='search'] {
+  -webkit-appearance: none;
+  /* border-radius: 0; */
+}
+
+input[type='date'] {
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+input, select, textarea, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+input[type=submit], input[type=button], button {
+  cursor: pointer;
+}
+
+input[type=checkbox], input[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
+input[type=checkbox] {
+  /* position: static !important; */
+  vertical-align: middle;
+}
+
+input[type=checkbox] + label:before {
+  display: none;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+  display: none;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Select box 스타일 초기화 */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@font-face {
+  font-family: 'KoPubDotum';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/KoPubDotumLight.woff2) format("woff2"), url(../fonts/KoPubDotumLight.woff) format("woff"), url(../fonts/KoPubDotumLight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'KoPubDotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/KoPubDotumMedium.woff2) format("woff2"), url(../fonts/KoPubDotumMedium.woff) format("woff"), url(../fonts/KoPubDotumMedium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'KoPubDotum';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/KoPubDotumBold.woff2) format("woff2"), url(../fonts/KoPubDotumBold.woff) format("woff"), url(../fonts/KoPubDotumBold.otf) format("opentype");
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6, strong, table th, input, textarea, select, button {
+  /* font-weight: 400; */
+  font-size: inherit;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+

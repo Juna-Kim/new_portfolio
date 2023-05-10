@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*기본태그 정의*/
+html, body {padding:0;margin:0;}
+body, td, select, textarea, input {font-family:'NanumGothic', 'arial', '돋움', 'Dotum', 'verdana';}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input{
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+button{border:0; cursor:pointer;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+
+/* 리스트의 스타일 제거 */
+li {list-style:none;}
+
+/* 테이블 스타일 초기화 */
+table {border-collapse:collapse;border-spacing:0;;padding:0;table-layout:fixed;width:100%;}
+
+/* 이미지 및 필드셋에서 보더 표시 초기화 */
+fieldset, img,iframe {border:0;}
+img{border:0 none; vertical-align:middle;}
+
+/* 캡션 텍스트 정렬 초기화 */
+caption {text-align:left;}
+
+/* 폼태그의 초기화 */
+select {vertical-align:middle;}
+input {vertical-align:middle;}
+input:focus {outline: 2px solid lightblue;}
+textarea {outline:none;}
+input.radio {vertical-align:middle;}
+
+a{text-decoration:none; color:#333;}
+a:active    {text-decoration:none;}
+a:visited    {text-decoration:none;}
+a:hover    {text-decoration:none;}
+
+/* hidden 처리 */
+caption{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+legend{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+.hide,hr{position:absolute;top:0;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+
+.hidden{
+	position:absolute;
+	top:0;left:0;
+	width:0;height:0;
+	margin:0;padding:0;
+	font-size:0;line-height:0;letter-spacing:0;
+	overflow:hidden;
+}
+
+.skip-navigation a {position:absolute; left:-3000%;}
+.skip-navigation a:focus { display:block; left:0; top:0; z-index:6000; width:100%; height:30px; line-height:30px; background:#570000; color:#fff; text-align:center;}
+
+.layerpopup{position:absolute; z-index:999;}
+.layerpopup-tit{background:#00b5c5 url(../../images/00/layerpopup-back.png) no-repeat; padding:20px;font-size:20px; color:#fff; font-weight:bold;}
+.layerpopup-txt{/* background:#fff url(../../images/00/layerpopup-txt.png) center center no-repeat; */ background:url(../../images/00/layerpopup-pattern.jpg); overflow:hidden; padding-bottom:50px;}
+.layerpopup-bottom{background:#efefef; text-align:right; height:30px; line-height:30px;}
+.layerpopup-bottom a{margin-right:6px;}
+.layerpopup-bottom input{vertical-align:middle;}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-기록관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 1 );
+            $(".datepicker").datepicker('setDate',new Date());
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="left_area">
+            <div class="left_top">
+                <div class="left_date_select mb20">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                    <div class="checks">
+                        <input type="checkbox" id="chk_a1">
+                        <label for="chk_a1"><span></span>퇴소자 포함</label>
+                    </div>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="11%">
+                            <col width="14%">
+                            <col width="15%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="14%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">입소자<br>성명</th>
+                                <th scope="col">입소<br>(예정)일</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">나이</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">본인<br>부담률</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="11%">
+                            <col width="14%">
+                            <col width="15%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="14%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top type3">
+                <div class="record">
+                    <div class="record_pic">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                    <ul class="record_data">
+                        <li><span>생활실</span>2층 호실, 102호</li>
+                        <li><span>입소자 성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31 -26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                        <li><span>식사</span>일반식</li>
+                    </ul>
+                </div>
+                <div class="record_table">
+                    <table>
+                        <caption>대상자</caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="26.66%">
+                            <col width="26.66%">
+                            <col width="26.66%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2" class="bdtl bdbl">대상자</th>
+                                <th scope="col">체위변경</th>
+                                <th scope="col">유치도뇨관</th>
+                                <th scope="col" class="bdtr">경관식</th>
+                            </tr>
+                            <tr>
+                                <td>O</td>
+                                <td>O</td>
+                                <td class="bdbr">O</td>
+                            </tr>                              
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+              
+            <div class="right_bottom type3">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>배변배뇨</a></li>
+                        <li><a href="#a"><span></span>기록지</a></li>
+                        <li><a href="#a"><span></span>체위변경</a></li>
+                        <li><a href="#a"><span></span>수분공금,<br>유치도뇨관,<br>경관식</a></li>
+                        <li><a href="#a"><span></span>식사도움</a></li>
+                        <li><a href="#a"><span></span>프로그램</a></li>
+                        <li><a href="#a"><span></span>목욕,<br>수급자제재</a></li>
+                        <li><a href="#a"><span></span>상담일지,<br>외출외박면회</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+                    <div class="table_type02 mb10">
+                        <table>
+                            <caption>수분공급,유치도뇨관,경관식</caption>
+                            <colgroup>
+                                <col width="33.33%">
+                                <col width="33.33%">
+                                <col width="33.33%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="amount_check_wrap">
+                                            <h3 class="con_title">물수분공급</h3>
+                                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                                            <div class="amount_check_btn">
+                                                <button type="button" class="up_btn"><span class="blind">증가</span></button>
+                                                <button type="button" class="down_btn"><span class="blind">감소</span></button>
+                                            </div>
+                                            <div class="amount_check">
+                                                <img src="images/check_img1.png" alt="물수분공급 양 체크 이미지">
+                                                <button type="button" class="location1"><span class="blind"></span></button>
+                                                <button type="button" class="location2"><span class="blind"></span></button>
+                                                <button type="button" class="location3"><span class="blind"></span></button>
+                                                <button type="button" class="location4"><span class="blind"></span></button>
+                                                <button type="button" class="location5"><span class="blind"></span></button>
+                                                <button type="button" class="location6"><span class="blind"></span></button>
+                                            </div>
+                                            <div class="amount_write">
+                                                <div>
+                                                    <div class="select_custom w30">
+                                                        <select name="" id="">
+                                                            <option value="">옵션1</option>
+                                                            <option value="">옵션2</option>
+                                                            <option value="">옵션3</option>
+                                                            <option value="">옵션4</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> 시</span>  
+                                                    <div class="select_custom w30">
+                                                        <select name="" id="">
+                                                            <option value="">옵션1</option>
+                                                            <option value="">옵션2</option>
+                                                            <option value="">옵션3</option>
+                                                            <option value="">옵션4</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> 분</span>
+                                                </div>
+                                                <input type="text" class="input_custom w50 mt5"> mL
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="amount_check_wrap">
+                                            <h3 class="con_title">유치도뇨관</h3>
+                                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                                            <div class="amount_check_btn">
+                                                <button type="button" class="up_btn"><span class="blind">증가</span></button>
+                                                <button type="button" class="down_btn"><span class="blind">감소</span></button>
+                                            </div>
+                                            <div class="amount_check loc2">
+                                                <img src="images/check_img2.png" alt="유치도뇨관 양 체크 이미지">
+                                                <button type="button" class="location1"><span class="blind"></span></button>
+                                                <button type="button" class="location2"><span class="blind"></span></button>
+                                                <button type="button" class="location3"><span class="blind"></span></button>
+                                                <button type="button" class="location4"><span class="blind"></span></button>
+                                                <button type="button" class="location5"><span class="blind"></span></button>
+                                                <button type="button" class="location6"><span class="blind"></span></button>
+                                            </div>
+                                            <div class="amount_write">
+                                                <div>
+                                                    <div class="select_custom w30">
+                                                        <select name="" id="">
+                                                            <option value="">옵션1</option>
+                                                            <option value="">옵션2</option>
+                                                            <option value="">옵션3</option>
+                                                            <option value="">옵션4</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> 시</span>  
+                                                    <div class="select_custom w30">
+                                                        <select name="" id="">
+                                                            <option value="">옵션1</option>
+                                                            <option value="">옵션2</option>
+                                                            <option value="">옵션3</option>
+                                                            <option value="">옵션4</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> 분</span>  
+                                                </div>
+                                                <input type="text" class="input_custom w50 mt5"> mL
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="amount_check_wrap">
+                                            <h3 class="con_title">경관식</h3>
+                                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                                            <div class="amount_check_btn">
+                                                <button type="button" class="up_btn"><span class="blind">증가</span></button>
+                                                <button type="button" class="down_btn"><span class="blind">감소</span></button>
+                                            </div>
+                                            <div class="amount_check loc3">
+                                                <img src="images/check_img3.png" alt="경관식 양 체크 이미지">
+                                                <button type="button" class="location1"><span class="blind"></span></button>
+                                                <button type="button" class="location2"><span class="blind"></span></button>
+                                                <button type="button" class="location3"><span class="blind"></span></button>
+                                                <button type="button" class="location4"><span class="blind"></span></button>
+                                                <button type="button" class="location5"><span class="blind"></span></button>
+                                                <button type="button" class="location6"><span class="blind"></span></button>
+                                            </div>
+                                            <div class="amount_write">
+                                                <div>
+                                                    <div class="select_custom w30">
+                                                        <select name="" id="">
+                                                            <option value="">옵션1</option>
+                                                            <option value="">옵션2</option>
+                                                            <option value="">옵션3</option>
+                                                            <option value="">옵션4</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> 시</span>  
+                                                    <div class="select_custom w30">
+                                                        <select name="" id="">
+                                                            <option value="">옵션1</option>
+                                                            <option value="">옵션2</option>
+                                                            <option value="">옵션3</option>
+                                                            <option value="">옵션4</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> 분</span>  
+                                                </div>
+                                                <input type="text" class="input_custom w50 mt5"> mL
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>총량 <input type="text" class="input_custom w20"> 횟수 <input type="text" class="input_custom w20"></td>
+                                    <td>총량 <input type="text" class="input_custom w20"> 횟수 <input type="text" class="input_custom w20"></td>
+                                    <td>총량 <input type="text" class="input_custom w20"> 횟수 <input type="text" class="input_custom w20"></td>
+                                </tr>
+                                <tr>
+                                    <td>02시 00분 <span>110ml</span></td>
+                                    <td>02시 00분 <span>110ml</span></td>
+                                    <td>02시 00분 <span>110ml</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02시 00분 <span>120ml</span></td>
+                                    <td>02시 00분 <span>120ml</span></td>
+                                    <td>02시 00분 <span>120ml</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                    <td>02시 00분 <span>130ml</span></td>
+                                </tr>
+                            </tbody>
+                       
+                        </table>
+                    </div>
+                    <div class="table_type02">
+                        <table>
+                            <caption>날짜, 총량, 횟수 입력</caption>
+                            <colgroup>
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                                <col width="11.11%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">날짜</th>
+                                    <th scope="col">총량</th>
+                                    <th scope="col">횟수</th>
+                                    <th scope="col">날짜</th>
+                                    <th scope="col">총량</th>
+                                    <th scope="col">횟수</th>
+                                    <th scope="col">날짜</th>
+                                    <th scope="col">총량</th>
+                                    <th scope="col">횟수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2월14일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월14일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월14일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>2월13일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월13일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월13일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>2월12일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월12일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월12일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>2월11일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월11일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월11일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>2월10일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월10일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월10일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>2월09일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월09일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월09일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td>2월08일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월08일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td>2월08일</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+
+
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+    </script>
+</body>
+</html>

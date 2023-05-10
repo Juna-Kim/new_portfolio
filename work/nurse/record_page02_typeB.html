@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-기록관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 2 );
+            $(".datepicker").datepicker('setDate',new Date());
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="wrap bg_green">
+        <div class="left_area">
+            <div class="left_top">
+                <div class="left_date_select mb20">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                    <div class="checks">
+                        <input type="checkbox" id="chk_a1">
+                        <label for="chk_a1"><span></span>퇴소자 포함</label>
+                    </div>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="11%">
+                            <col width="14%">
+                            <col width="15%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="14%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">입소자<br>성명</th>
+                                <th scope="col">입소<br>(예정)일</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">나이</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">본인<br>부담률</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="11%">
+                            <col width="14%">
+                            <col width="15%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="14%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top type3">
+                <div class="record">
+                    <div class="record_pic">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                    <ul class="record_data">
+                        <li><span>생활실</span>2층 호실, 102호</li>
+                        <li><span>입소자 성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31 -26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                        <li><span>식사</span>일반식</li>
+                    </ul>
+                </div>
+                <div class="record_table">
+                    <table>
+                        <caption>대상자</caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="26.66%">
+                            <col width="26.66%">
+                            <col width="26.66%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2" class="bdtl bdbl">대상자</th>
+                                <th scope="col">체위변경</th>
+                                <th scope="col">유치도뇨관</th>
+                                <th scope="col" class="bdtr">경관식</th>
+                            </tr>
+                            <tr>
+                                <td>O</td>
+                                <td>O</td>
+                                <td class="bdbr">O</td>
+                            </tr>                              
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+              
+            <div class="right_bottom type3">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>배변배뇨</a></li>
+                        <li><a href="#a"><span></span>기록지</a></li>
+                        <li><a href="#a"><span></span>체위변경</a></li>
+                        <li><a href="#a"><span></span>수분공금,<br>유치도뇨관,<br>경관식</a></li>
+                        <li><a href="#a"><span></span>식사도움</a></li>
+                        <li><a href="#a"><span></span>프로그램</a></li>
+                        <li><a href="#a"><span></span>목욕,<br>수급자제재</a></li>
+                        <li><a href="#a"><span></span>상담일지,<br>외출외박면회</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+  
+                    <div class="title_box">
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">관찰일지</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+                    
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>관찰일지</caption>
+                            <colgroup>
+                                <col width="6%">
+                                <col width="6%">
+                                <col width="12.57%">
+                                <col width="12.57%">
+                                <col width="12.57%">
+                                <col width="12.57%">
+                                <col width="12.57%">
+                                <col width="12.57%">
+                                <col width="12.57%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2"></th>
+                                    <th scope="col">2021-02-01</th>
+                                    <th scope="col">2021-02-02</th>
+                                    <th scope="col">2021-02-03</th>
+                                    <th scope="col">2021-02-04</th>
+                                    <th scope="col">2021-02-05</th>
+                                    <th scope="col">2021-02-06</th>
+                                    <th scope="col">2021-02-07</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*세면도움</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*구강관리/보조여부</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*옷 갈아입히기</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*몸단장</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*머리감기기</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">피부청결유지(면도)</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">손발톱정리</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*머리단장(이미용)</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*목욕-전신</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*이동도움</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*신체기능유지증진</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*기본동작훈련</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*일상생활동작훈련</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*신체기능훈련</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*의사소통도움</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*침구,린넨 교환 및 정리</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*환경관리</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*물품관리</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row" colspan="2" class="txt_l">*세탁물관리</th>
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                    <td>
+                                        <div class="select_custom w30">
+                                            <select name="" id="">
+                                                <option value="">0</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="plus_btn"><span class="blind">증가</span></button>
+                                        <button type="button" class="minus_btn"><span class="blind">감소</span></button>
+                                    </td> 
+                                </tr>
+                                <tr class="has_pd bb_none">
+                                    <th scope="row" rowspan="3">작성자</th>
+                                    <th scope="row" class="bb_have">1</th>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn" id="open_person_pop"><span class="blind">요양보호사</span></a>
+                                        <div class="person_popup">
+                                            <div class="small_pop">
+                                                <h3 class="con_title">요양보호사 명단</h3>
+                                                <a href="#a" class="btn_type01 small_pop_close">닫기</a>
+                                                <div class="table_type02 mt10">
+                                                    <table>
+                                                        <caption>요양보호사 명단</caption>
+                                                        <colgroup>
+                                                            <col width="33.33%">
+                                                            <col width="33.33%">
+                                                            <col width="33.33%">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="3">요양보호자</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                                <td>test</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>    
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>    
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>    
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>    
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>    
+                                    </td>
+                                    <td class="bb_have">
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>    
+                                    </td>
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                </tr>
+                                <tr class="has_pd">
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="input_custom w40">
+                                        <a href="#a" class="person_btn"><span class="blind">요양보호사</span></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <div class="save_btn">
+                    <a href="#a">저장</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+       
+
+
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+
+
+        $('#open_person_pop').click(function(){
+            $('.person_popup').show();
+        });
+
+        $('.person_popup .small_pop_close').click(function(){
+            $('.person_popup').hide();
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+/* noto */
+
+@font-face {
+	font-family : "Noto Sans Kr";
+	font-weight:400;
+	src: url('../fonts/notokr-regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/notokr-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/notokr-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/notokr-regular.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/notokr-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/notokr-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family : "Noto Sans Kr";
+	font-weight:500;
+	src: url('../fonts/notokr-medium.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/notokr-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/notokr-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/notokr-medium.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/notokr-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/notokr-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+	
+}
+
+/* Myriad Pro */
+@font-face {
+	font-family : "Myriad Pro";
+	font-weight:500;
+	src: url('../fonts/MyriadPro-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/MyriadPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/MyriadPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/MyriadPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/MyriadPro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* CircularStd */
+@font-face {
+	font-family : "CircularStd";
+	font-weight:500;
+	src: url('../fonts/CircularStd-Black.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/CircularStd-Black.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/CircularStd-Black.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/CircularStd-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/CircularStd-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family : "Myriad Pro";
+	font-weight:800;
+	src: url('../fonts/CircularStd-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/CircularStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/CircularStd-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/CircularStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/CircularStd-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

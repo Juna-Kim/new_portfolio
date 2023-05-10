@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-간호관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 1 );
+            $(".datepicker").datepicker('setDate',new Date());
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="left_area">
+            <div class="left_top">
+
+                <div class="left_date_select mb10">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <a href="#a" class="btn_type02" id="layer_pop2">수급자  상태검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                </div>
+                <div class="checks">
+                    <input type="checkbox" id="chk_a1">
+                    <label for="chk_a1"><span></span>퇴소자 포함</label>
+                </div>
+            </div>
+            <div class="left_table manage_left_tbl">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">어르신명</th>
+                                <th scope="col">입소일<br>(퇴소일)</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">식사</th>
+                                <th scope="col">배설</th>
+                                <th scope="col">투약</th>
+                                <th scope="col">욕창점수</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="25px">
+                            <col width="31px">
+                            <col width="40px">
+                            <col width="40px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                            <col width="22px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1층</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>3</td>
+                                <td>O</td>
+                                <td>dd</td>
+                                <td>dd</td>
+                                <td class="fc_ee">12</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top">
+                <div class="manage_pic">
+                    <div class="manage_picture">
+                        <img src="images/pic.png" alt="입소자 이미지">
+                    </div>
+                    <ul class="pic_text">
+                        <li><span>생활실</span>2층 호실,102호</li>
+                        <li><span>입소자성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31-26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                    </ul>
+                </div>
+
+                <div class="manage_data">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>평가일</dt>
+                                <dd>2020.03.01</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위변경</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창부위</dt>
+                                <dd>대전자(L),천골,미골,팔꿈치(L) </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>외상/자립상태</dt>
+                                <dd>준와상</dd>
+                            </dl>
+                            <dl>
+                                <dt>비위관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>식사</dt>
+                                <dd>죽</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>질병</dt>
+                                <dd>치매,중풍</dd>
+                            </dl>
+                            <dl>
+                                <dt>유치도뇨관</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>배설</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>수급자상태</dt>
+                                <dd>틀니(부분), 방광루</dd>
+                            </dl>
+                            <dl>
+                                <dt>욕창방지도구</dt>
+                                <dd>매트리스, 방석, 쿠션</dd>
+                            </dl>
+                            <dl>
+                                <dt>체위</dt>
+                                <dd>유치도뇨관</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="right_bottom type2">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>간호처치</a></li>
+                        <li><a href="#a"><span></span>건강관리</a></li>
+                        <li><a href="#a"><span></span>투약관리</a></li>
+                        <li><a href="#a"><span></span>욕창관리</a></li>
+                        <li><a href="#a"><span></span>구강관리</a></li>
+                        <li><a href="#a"><span></span>의사진료</a></li>
+                        <li><a href="#a"><span></span>욕창.낙상<br>위험도평가</a></li>
+                        <li><a href="#a"><span></span>건강수준평가<br>및 간호기록</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+
+                    <div class="title_box">
+                        <div class="date_fs"> 
+                            <a href="#a" class="select_prev"><span class="blind">이전</span></a>
+                            <strong>2021년</strong>   
+                            <a href="#a" class="calendar_img"><span class="blind">달력열기</span></a>
+                            <a href="#a" class="select_next"><span class="blind">다음</span></a>
+                        </div>
+                        <div class="title_right_btn">
+                            <div class="square"><span>욕창위험도평가</span></div>
+                            <div class="circle"><span>낙상위험도평가</span></div>
+                        </div>
+                    </div>
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>욕창위험도평가,낙상위험도평가 표</caption>
+                            <colgroup>
+                                <col width="4%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                                <col width="8%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2"></th>
+                                    <th scope="col" colspan="3">1분기</th>
+                                    <th scope="col" colspan="3">2분기</th>
+                                    <th scope="col" colspan="3">3분기</th>
+                                    <th scope="col" colspan="3">4분기</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">1월</th>
+                                    <th scope="col">2월</th>
+                                    <th scope="col">3월</th>
+                                    <th scope="col">4월</th>
+                                    <th scope="col">5월</th>
+                                    <th scope="col">6월</th>
+                                    <th scope="col">7월</th>
+                                    <th scope="col">8월</th>
+                                    <th scope="col">9월</th>
+                                    <th scope="col">10월</th>
+                                    <th scope="col">11월</th>
+                                    <th scope="col">12월</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2019</th>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2020</th>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2021</th>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="square"><span>2020-05-01</span></div>
+                                        <div class="circle"><span>2020-05-13</span></div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 욕창위험도평가 -->
+                    <div class="title_box">
+                        <h3 class="con_title">욕창위험도평가(Braden Scale)</h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">기초정보 생성</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+                    <p class="text_explain txt_r"><span class="fc_purple">&#8251;신규 수급자는 <em class="fc_red">급여개시 전(입소당일 포함)</em>에 실시합니다. </span>위험없음(19~23)/약간의 위험있음(15~18)/중간정도의
+                    위험 있음(13~14)/위험이 높음(10~12)/위험이 매우높음(9이하)</p>
+                    <div class="table_type01 mb10">
+                        <table>
+                            <caption>욕창위험도평가</caption>
+                            <colgroup>
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">평가일</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">총점</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">결과</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">평가자</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_type02 line_correct mb20">
+                        <table>
+                            <caption>욕창위험도평가</caption>
+                            <colgroup>
+                                <col width="5%">
+                                <col width="22.5%">
+                                <col width="22.5%">
+                                <col width="22.5%">
+                                <col width="22.5%">
+                                <col width="5%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">1점</th>
+                                    <th scope="col">2점</th>
+                                    <th scope="col">3점</th>
+                                    <th scope="col">4점</th>
+                                    <th scope="col">점수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">감각인지정도</th>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">1.감각 완전 제한됨(완전히 못 느낌)</em><br>   
+                                            의식수준이 떨어지거나 진정/안정제 복용/투여 등으로 통증 자극에 반응이 없다(통증자극에 대해 신음하거나 주먹을 쥔다거나 할수없음). 
+                                            신체 대부분에서 통증을 느끼지 못한다.
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">2.감각 매우 제한됨</em><br>  
+                                            통증 자극에만 반응(신음하거나 불안정한 양상으로 통증이 있음을 나타냄) 또는 신체의1/2 이상에 통증이나 불편감을 느끼지 못한다.
+                                        </a>                                            
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">3.감각 약간 제한됨</em><br>  
+                                            말로 지시하면 반응하지만,체위 변경을 해달라고 하거나 불편하다고 항상 말할 수 있는 것은 아니다.또는 사지에 통증이나 불편감을 느끼지 못한다.
+                                        </a>  
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">4.감각 손상없음</em><br>  
+                                            말로 지시하면 반응을 보이며 통증이나 불편감을 느끼고 말로 표현할 수 있다.
+                                        </a> 
+                                    </td>
+                                    <td>2점</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">습기여부</th>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">1.항상 젖어있음</em><br>  
+                                                피부가 땀,소변으로 항상 축축하다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">2.자주 젖어있음</em><br>  
+                                            늘 축축한 것은 아니지만 자주 축축해져 8시간에 한번은 린넨을 갈아주어야한다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">3.가끔 젖어있음</em><br>  
+                                            가끔 축축하다. 하루에 한번 정도 린넨 교환이 필요하다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">4.거의 젖지않음</em><br>  
+                                            피부는 보통 건조하며 린넨은 평상시대로만 교환해 주면 된다.
+                                        </a> 
+                                    </td>
+                                    <td>2점</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">활동상태</th>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">1.항상 침대에만 누워 있음</em><br>  
+                                            도움 없이는 물론 손, 발을 조금도 움직이지 못한다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">2.의자에 앉아 있을 수 있음</em><br>  
+                                            걸을 수 없거나 걷는 능력이 상당히 제한되어 있다. 체중 부하를 할 수 없어 의자나 휠체어로 이동시 도움을 필요로 한다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">3.가끔 걸을 수 있음</em><br>  
+                                            낮 동안에 도움을 받거나 도움 없이 매우 짧은 거리를 걸을 수 있다. 그러나 대부분의 시간은 침상이나 의자에서 보낸다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">4.자주 걸을 수 있음</em><br>  
+                                            적어도 하루에 두번 방 밖을 걷고, 방안은 적어도 2시간 마다 걷는다.
+                                        </a> 
+                                    </td>
+                                    <td>2점</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">움직임</th>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">1.완전히 못 움직임</em><br>  
+                                            도움 없이는 신체나 사지를 전혀 움직이지 못한다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">2.매우 제한됨</em><br>  
+                                            신체자 사지의 체위를 가끔 조금 변경 시킬 수 있지만 자주하거나 많이 변경시키지 못한다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">3.약간 제한됨</em><br>  
+                                            조금이기는 하지만 혼자서 신체나 사지의 체위를 자주 변경시킨다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">4.제한없음</em><br>  
+                                            도움 없이도 체위를 자주 변경시킨다.
+                                        </a> 
+                                    </td>
+                                    <td>2점</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">영양상태</th>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">1.매우나쁨</em><br>  
+                                            제공된 음식의 1/3이하를 섭취한다. 단백질(고기나 유제품)을 하루에 2회 섭취량 이하를 먹는다. 수분을 잘 섭취 안한다. 유동성 영양보충액도 섭취 하지 않는다. 
+                                            또는 5일이상 동안 금식 상태이거나 유동식으로 유지한다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">2.부족함</em><br>  
+                                            제공된 음식의 1/2를 먹는다. 단백질(고기나 유제품)은 하루에 약 2회 섭취량 이하를 먹는다. 가끔 영양보충 식이를 섭취한다. 또는 유동식이나 
+                                            위관영양을 적정량 미만으로 투여 받는다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">3.적당함</em><br>  
+                                            식사의 반 이상을 먹는다. 단백질(고기나 유제품)을 하루에 4회 섭취량을 먹는다. 가끔 식사를 거부 하지만 보통 영양보충식이는 섭취한다.
+                                            또는 위관 영양이나 TPN으로 대부분의 영양요구량이 충족 된다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">4.양호함</em><br>  
+                                            대부분의 식사를 섭취하며 절대 거절하는 일이 없다. 단백질(고기나 유제품)을 하루에 4회 섭취량 이상을 먹으며 가끔 식간에도 먹는다. 영양보충 식이는 필요로 되지 않는다.
+                                        </a> 
+                                    </td>
+                                    <td>2점</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">마찰력과 용전력</th>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">1.문제있음</em><br>  
+                                            움직이는데 중정도 이상의 많은 도움을 필요로 한다. 린넨으로 끌어당기지 않고 완전히 들어 올리는 것은 불가능하다. 자주 침대나 의자에서 미끄러져 내려가 디시 제 위치로 옮기는데 많은
+                                            도움이 필요된다. 관절구축이나 강직, 움직임 등으로 항상 마찰이 생긴다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">2.잠정적으로 문제있음</em><br>  
+                                            자유로이 움직이나 약간의 도움을 필요로 한다. 움직이는 동안 의자 억제대나 린넨 또는 다른 장비에 의해 마찰이 생길 수 있다.
+                                            의자나 침대에서 대부분 좋은 체위를 유지하고 있지만 가끔은 미끄러져 내려온다.
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        <a href="#a">
+                                            <em class="fc_purple">3.문제없음</em><br>  
+                                            침대나 의자에서 자유로이 움직이며 움직일때 스스로 자신을 들어올릴 수 있을 정도로 충분한 근력이 있다. 침대나 의자에 누워 있을때 항상 좋은 체위를 유지한다.
+                                        </a> 
+                                    </td>
+                                    <td></td>
+                                    <td>2점</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //욕창위험도평가 -->
+                    <!-- 낙상위험도평가 -->
+                    <div class="title_box">
+                        <h3 class="con_title">낙상위험도평가</h3>
+                        <div class="title_right_btn">
+                            <div class="radio_custom large_radio pt5">
+                                <input type="radio" id="bg1" name="bgr1" checked="">
+                                <label for="bg1">Huhn평가도구</label>
+                                <input type="radio" id="bg2" name="bgr1">
+                                <label for="bg2">낙상위험예측도구</label>
+                                <input type="radio" id="bg3" name="bgr1">
+                                <label for="bg3">Bobath평가도구</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text_explain">※신규 수급자는 <em class="fc_red">급여개시 전(입소당일 포함)</em>에 실시합니다</p>
+                    <div class="title_box">
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">기초정보 생성</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+
+                    <div class="table_type01 mb10">
+                        <table>
+                            <caption>낙상위험도 평가</caption>
+                            <colgroup>
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">평가일</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">총점</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">결과</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">평가자</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>낙상위험도평가</caption>
+                            <colgroup>
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">4점</th>
+                                    <th scope="col">3점</th>
+                                    <th scope="col">2점</th>
+                                    <th scope="col">1점</th>
+                                    <th scope="col">점수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">연령</th>
+                                    <td></td>
+                                    <td>>80</td>
+                                    <td>70-79</td>
+                                    <td>60-69</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">정신상태</th>
+                                    <td>혼란스러움/방향감각장애</td>
+                                    <td></td>
+                                    <td>때때로 혼란스러움/방향감각장애</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">배변</th>
+                                    <td>소변.대실금</td>
+                                    <td>조절능력 있지만 도움필요</td>
+                                    <td></td>
+                                    <td>유지도뇨관/인공 항루</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">낙상경험</th>
+                                    <td>이미 세 번 이상 넘어짐</td>
+                                    <td></td>
+                                    <td>이미 한 번 또는 두 번 넘어짐</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">활동</th>
+                                    <td>전적으로 도움을 받음</td>
+                                    <td>자리에서 일어나 앉기 도움</td>
+                                    <td></td>
+                                    <td>자립/세면대 화장실 이용</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">걸음걸이 및 균형</th>
+                                    <td>불규칙/불안정 서 있을 떄와 걸을 때 균형을 거의 유지하지 못함</td>
+                                    <td>일어서기/걸을때 기립성 빈혈/혈액 순환문제</td>
+                                    <td>보행장애/보조도구나 도움으로 걷기</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">지난7일간 <br>약복용이나 계획된 약물</th>
+                                    <td>3개 또는 그 이상의 약 복용</td>
+                                    <td>두 가지 약 복용</td>
+                                    <td>한 가지 약 복용</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">함계점수</th>
+                                    <td colspan="5">
+                                        척도(합계점수 해석) - 4점이하:낙상위험 낮음 / 5~10점:낙상위험 높음 / 11점 이상:낙상위험 아주 높음
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                     <!-- //낙상위험도평가 -->
+
+                    <!-- 6-2낙상위험예측도구 작성화면 -->
+                    <div class="title_box">
+                        <h3 class="con_title">낙상위험 예측 도구(Gyldenvand and Shedd,1989)</h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">기초정보 생성</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+                    <p class="text_explain">&#8251;신규 수급자는 <em class="fc_red">급여개시 전(입소당일 포함)</em>에 실시합니다. 낙상의 위험 낮음(0~3)/낙상예방 조치교육(4)/낙상위험 높음(5~13)/낙상위험도 아주높음(14~39)</p>
+
+                    <div class="table_type01 mb10">
+                        <table>
+                            <caption>낙상위험 예측 도구</caption>
+                            <colgroup>
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="12%">
+                                <col width="13%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">평가일</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">총점</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">결과</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">평가자</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_type02 mb20">
+                        <table>
+                            <caption>낙상위험 예측 도구 작성화면</caption>
+                            <colgroup>
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="18%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">0</th>
+                                    <th scope="col">1</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">점수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">입원후 경과기간</th>
+                                    <td></td>
+                                    <td>15일 이상</td>
+                                    <td>8-14일</td>
+                                    <td>입원에서 7일사이</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연령</th>
+                                    <td>19세 이하</td>
+                                    <td>20-60세</td>
+                                    <td>61세-74세</td>
+                                    <td>75세 이상</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">낙상력</th>
+                                    <td>지난해 낙상력 없음</td>
+                                    <td>6개월 내에 낙상</td>
+                                    <td>1-5개월내 낙상</td>
+                                    <td>지난 4주내 낙상</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">균형</th>
+                                    <td>혼자서도 거동 잘함</td>
+                                    <td>보조기를 사용해 보행</td>
+                                    <td>두명이상의 도움 필요</td>
+                                    <td>도움이 있어야 설 수 있다.</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">인지기능</th>
+                                    <td>시각,사람,장소에 대한 지남력 있음</td>
+                                    <td>사람과 장소에 대한 지남력 있음</td>
+                                    <td>사람과 자신에 대한 지남력 있음</td>
+                                    <td>혼돈상태</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">초조</th>
+                                    <td>없다</td>
+                                    <td>약한정도-때로 욕설을 한다.</td>
+                                    <td>중증정도-소리를 지르고 위협적인 언어사용</td>
+                                    <td>심한정도-억제대를 사용해야한다.</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">우울</th>
+                                    <td>없다</td>
+                                    <td>약간우울-식욕이 없고 힘이 없으나 체중저하나 수면장애는 없다.</td>
+                                    <td>중증정도-자존감이 저하되어 있다. 수면장애외 식욕부진이 있다.</td>
+                                    <td>중증-집중력이 나쁘다.식욕이 없고 체중이 5kg 이상 감소한다.</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">불안</th>
+                                    <td>없다</td>
+                                    <td>경증-인지기능은 좋으나 안절부절 못할 때가 있다.</td>
+                                    <td></td>
+                                    <td>중증-어떤것에 매우 집중하고 있다.목이 막히는 느낌이 있거나 피해망상.</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">시력</th>
+                                    <td>정상</td>
+                                    <td>안경착용</td>
+                                    <td>백내장이나 녹내장이 있다.</td>
+                                    <td>시야 장애가 있다.</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">의사소통</th>
+                                    <td>정상</td>
+                                    <td>청력장애</td>
+                                    <td>말하기장애</td>
+                                    <td>말하기와 청력장애 모두 있다.</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">약품</th>
+                                    <td>심혈관계,신경계약 복용이 없다.</td>
+                                    <td>심혈관계약 사용</td>
+                                    <td>신경계 약 사용</td>
+                                    <td>심혈관계,신경계약 복용</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">만성질환</th>
+                                    <td>없다</td>
+                                    <td>1가지</td>
+                                    <td>2가지</td>
+                                    <td>3가지 이상</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">1일 2회이상 긴박뇨, 빈뇨-1일6회이상, 야뇨-야간 2회 이상</td>
+                                    <td rowspan="2"><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>없다</td>
+                                    <td>1가지</td>
+                                    <td>2가지</td>
+                                    <td class="no_last">3가지 이상</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //6-2낙상위험예측도구 작성화면 -->
+
+                    <!-- 6-2 Bobath 작성화면 -->
+                    <div class="title_box">
+                        <h3 class="con_title">보봐스기념병원 낙상위험평가도구</h3>
+                        <div class="title_right_btn">
+                            <a href="#a" class="btn_type03 bg_light_purple">기초정보 생성</a>
+                            <a href="#a" class="btn_type03 bg_purple">저장</a>
+                        </div>
+                    </div>
+                    <p class="text_explain">&#8251;신규 수급자는 <em class="fc_red">급여개시 전(입소당일 포함)</em>에 실시합니다. 고위험군 15점이상/ 개인간병 고려 20점이상</p>
+
+                    <div class="table_type01 mb10">
+                        <table>
+                            <caption> Bobath 작성화면</caption>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="23.33%">
+                                <col width="10%">
+                                <col width="23.33%">
+                                <col width="10%">
+                                <col width="23.33%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">평가일</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">입소자성명</th>
+                                    <td>간미희</td>
+                                    <th scope="row">법적생년월일</th>
+                                    <td>250611</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">총점</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                    <th scope="row">결과</th>
+                                    <td></td>
+                                    <th scope="row">평가자</th>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_type02">
+                        <table>
+                            <caption> Bobath 작성화면</caption>
+                            <colgroup>
+                                <col width="23%">
+                                <col width="14%">
+                                <col width="14%">
+                                <col width="14%">
+                                <col width="14%">
+                                <col width="14%">
+                                <col width="7%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">0</th>
+                                    <th scope="col">1</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">점수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">나이</th>
+                                    <td>60세미만</td>
+                                    <td>60-70세</td>
+                                    <td>70-80세</td>
+                                    <td>80세 이상</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">낙상과거력</th>
+                                    <td>없음</td>
+                                    <td>지난1년 이내 낙상</td>
+                                    <td>지난 1~5개월 이내 낙상</td>
+                                    <td>지난 4주이내 낙상</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">활동수준</th>
+                                    <td>와상상태</td>
+                                    <td>1명 이상의 많은 도움으로 휠체어 이동가능<br>(지속적인 Sitting 유지 어려움)</td>
+                                    <td>1명의 약간의 도움으로 휠체어 이동 가능<br>(Static standing이 가능)</td>
+                                    <td>보조도구나 한사람의 도움으로 보행 가능</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">의식상태</th>
+                                    <td>지남력있음 +3 (시간,장소,사람)</td>
+                                    <td>사정 못함</td>
+                                    <td>지남력있음 +2 (장소,사람)</td>
+                                    <td>지남력있음 +1 (사람)</td>
+                                    <td>지남력없음</td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">의사소통</th>
+                                    <td>정상</td>
+                                    <td>청력상실</td>
+                                    <td>언어장애</td>
+                                    <td>청력 및 언어장애</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">위험요인<br>수면장애.비뇨장애.시력장애.어지러움.우울.흥분.불안</th>
+                                    <td>없음</td>
+                                    <td>1-2개</td>
+                                    <td>3개</td>
+                                    <td>4개이상</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">관절질환<br>뇌졸중.고혈압이나 저혈압.치매.파킨슨질환.골다공증.신장장애.근골격계질환(관절염 포함).발작장애</th>
+                                    <td>없음</td>
+                                    <td>1-2개</td>
+                                    <td>3개</td>
+                                    <td>4개 이상</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">약물<br>
+                                    A:고혈압제,이뇨제,강심제<br>
+                                    B:최면진정제,항우울제,항불안제,항파킨슨제제,항전간제
+                                    </th>
+                                    <td>A:0개, B:0-2개</td>
+                                    <td>A:1-3개, B:0-2개</td>
+                                    <td>A:0개, B:3-6개</td>
+                                    <td>A:1-3개, B:3-6개</td>
+                                    <td></td>
+                                    <td><input type="text" class="input_custom"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//6-2 Bobath 작성화면 -->
+                </div>
+            </div>  
+        </div>
+        
+    </div>
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+    </script>
+</body>
+</html>

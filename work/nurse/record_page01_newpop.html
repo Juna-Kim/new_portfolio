@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>엔젤시스템-기록관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script>
+        $(function() {
+            setDatePicker(".datepicker", 1 );
+            $(".datepicker").datepicker('setDate',new Date());
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="layer_dim"></div> <!--팝업창 뒷배경 -->
+        <div class="left_area">
+            <div class="left_top">
+                <div class="left_date_select mb20">
+                    <button type="button" class="select_prev"><span class="blind">이전</span></button> 
+                    <input type="text" class="datepicker" name="test" readonly>   
+                    <button type="button" class="select_next"><span class="blind">다음</span></button> 
+                </div>
+                <div  class="top_btn">
+                    <a href="#a" class="btn_type01" id="layer_pop">생활실 검색</a>
+                    <input type="text" class="input_type02" placeholder="이름조회">
+                    <div class="checks">
+                        <input type="checkbox" id="chk_a1">
+                        <label for="chk_a1"><span></span>퇴소자 포함</label>
+                    </div>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="table_top">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="11%">
+                            <col width="14%">
+                            <col width="15%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="14%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">생활실</th>
+                                <th scope="col">입소자<br>성명</th>
+                                <th scope="col">입소<br>(예정)일</th>
+                                <th scope="col">성별</th>
+                                <th scope="col">나이</th>
+                                <th scope="col">등급</th>
+                                <th scope="col">본인<br>부담률</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>      
+                <div class="table_bottom manage_bottom">
+                    <table>
+                        <caption>자료 리스트</caption>
+                        <colgroup>
+                            <col width="11%">
+                            <col width="14%">
+                            <col width="15%">
+                            <col width="16%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="14%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>101호</td>
+                                <td>박성은</td>
+                                <td>2021.<br>02.03</td>
+                                <td>여</td>
+                                <td>26</td>
+                                <td>3</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+
+            <!-- 레이어팝업 -->
+            <div class="search_pop" style="display:none;">
+                <div class="search">
+                    <div class="search_top"> 
+                        <div class="checks_type2">
+                            <input type="checkbox" checked="" id="chk_b1" disabled>
+                            <label for="chk_b1"><span></span>전체</label>
+                        </div>
+                    </div>
+                    <div class="search_bottom">
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_c1" name="chk_c">
+                                    <label for="chk_c1"><span></span>111 - 31명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c2" name="chk_c">
+                                        <label for="chk_c2"><span></span>111 - 31명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c3" name="chk_c">
+                                        <label for="chk_c3"><span></span>진달래 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c4" name="chk_c">
+                                        <label for="chk_c4"><span></span>행복 - 5명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c5" name="chk_c">
+                                        <label for="chk_c5"><span></span>상급침실 - 11명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_list">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_c6" name="chk_c">
+                                        <label for="chk_c6"><span></span>2층 - 8명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c7" name="chk_c">
+                                        <label for="chk_c7"><span></span>수선화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c8" name="chk_c">
+                                        <label for="chk_c8"><span></span>무궁화 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c9" name="chk_c">
+                                        <label for="chk_c9"><span></span>개나리 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c10" name="chk_c">
+                                        <label for="chk_c10"><span></span>모란꽃 - 1명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_c11" name="chk_c">
+                                        <label for="chk_c11"><span></span>sksch - 1명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_d1" name="chk_d">
+                                    <label for="chk_d1"><span></span>BBONG - 3</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_d2" name="chk_d">
+                                        <label for="chk_d2"><span></span>2층 - 2명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_d3" name="chk_d">
+                                        <label for="chk_d3"><span></span>bbong2 - 2명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search_select">
+                            <div class="select_first">
+                                <div class="checks_type2">
+                                    <input type="checkbox" id="chk_e1" name="chk_e">
+                                    <label for="chk_e1"><span></span>가동 - 7명</label>
+                                </div>
+                            </div>
+                            <ul class="select_list fst_box">
+                                <li>
+                                    <div class="checks_type2 bg_color">
+                                        <input type="checkbox" id="chk_e2" name="chk_e">
+                                        <label for="chk_e2"><span></span>1층 - 7명</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checks_type2">
+                                        <input type="checkbox" id="chk_e3" name="chk_e">
+                                        <label for="chk_e3"><span></span>경인실 - 3명</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_close"><a href="#a" class="btn_type01">닫기</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="right_top type3">
+                <div class="record">
+                    <div class="record_pic">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                    <ul class="record_data">
+                        <li><span>생활실</span>2층 호실, 102호</li>
+                        <li><span>입소자 성명</span>박성은</li>
+                        <li><span>생년월일(나이)</span>2001.01.31 -26세</li>
+                        <li><span>등급</span>2등급</li>
+                        <li><span>등급유효기간</span>2018.03.01~2019.02.28</li>
+                        <li><span>식사</span>일반식</li>
+                    </ul>
+                </div>
+                <div class="record_table">
+                    <table>
+                        <caption>대상자</caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="26.66%">
+                            <col width="26.66%">
+                            <col width="26.66%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2" class="bdtl bdbl">대상자</th>
+                                <th scope="col">체위변경</th>
+                                <th scope="col">유치도뇨관</th>
+                                <th scope="col" class="bdtr">경관식</th>
+                            </tr>
+                            <tr>
+                                <td>O</td>
+                                <td>O</td>
+                                <td class="bdbr">O</td>
+                            </tr>                              
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+              
+            <div class="right_bottom type3">
+                <div class="right_ico_area">
+                    <ul>
+                        <li><a href="#a"><span></span>배변배뇨</a></li>
+                        <li><a href="#a"><span></span>기록지</a></li>
+                        <li><a href="#a"><span></span>체위변경</a></li>
+                        <li><a href="#a"><span></span>수분공금,<br>유치도뇨관,<br>경관식</a></li>
+                        <li><a href="#a"><span></span>식사도움</a></li>
+                        <li><a href="#a"><span></span>프로그램</a></li>
+                        <li><a href="#a"><span></span>목욕,<br>수급자제재</a></li>
+                        <li><a href="#a"><span></span>상담일지,<br>외출외박면회</a></li>
+                    </ul>
+                </div>
+
+                <div class="right_contents">
+                    <div class="patient_checks mb20">
+                        <div class="date_checks">
+                            <p class="day_num">7</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_checks">
+                            <p class="day_num">8</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_checks">
+                            <p class="day_num">9</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_checks">
+                            <p class="day_num">10</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_checks">
+                            <p class="day_num">11</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_checks">
+                            <p class="day_num">12</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date_checks">
+                            <p class="day_num">13</p>
+                            <div class="first_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                            <button class="more_btn"><span class="blind">더보기</span></button>
+                            <div class="second_detail_wrap">
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>화장실보행보조/화장실</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/배뇨없음</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_b">소변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                                <div class="detail_checks">
+                                    <strong class="txt_p">대변 10:57</strong>
+                                    <span>기저귀/정량 O</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="resident_write">
+                        <div class="left_write">
+                            <div class="title_box">
+                                <div class="click_button">
+                                    <ul>
+                                        <li class="on"><a href="#a" class="btn_first">배변</a></li>
+                                        <li><a href="#a" class="btn_second">배뇨</a></li>
+                                    </ul>
+                                </div>
+        
+                                <div class="title_right_btn">
+                                    <a href="#a" class="btn_type03 bg_purple">저장</a>
+                                </div>
+                            </div>
+
+                            <div class="left_write_box">
+                                <ul>
+                                    <!-- ppt1. 리스트 2개 더 추가하였습니다. -->
+                                    <li><a href="#a">기저귀교환<br>(대변소량)</a></li>
+                                    <li><a href="#a">기저귀교환<br>(대변정량)</a></li>
+                                    <li><a href="#a">기저귀확인<br>(설변)</a></li>
+                                    <li><a href="#a">기저귀교환<br>(관장)</a></li>
+                                    <li><a href="#a">기저귀교환<br>(지림)</a></li>
+                                    <li><a href="#a">화장실<br>보행보조</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="write_con">
+                                <div class="mt10 mb5">
+                                    <a href="#a" class="white_box">유형</a>
+                                    <a href="#a" class="white_box">양</a>
+                                </div>
+                                <div class="mb3">
+                                    <input type="text" class="input_custom w20"> 시
+                                    <input type="text" class="input_custom w20"> 분 
+                                </div>
+                                <div class="checks">
+                                    <input type="checkbox" id="chk1_1" name="chk_1">
+                                    <label for="chk1_1"><span></span>교환여부</label>
+                                    <a href="#a" class="white_box">교환자</a>
+                                </div>
+                                <div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk2_1" name="chk_2">
+                                        <label for="chk2_1"><span></span>접착(특대)</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk3_1" name="chk_3">
+                                        <label for="chk3_1"><span></span>접착(대)</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk4_1" name="chk_4">
+                                        <label for="chk4_1"><span></span>패드</label>
+                                    </div> 
+                                </div>
+                                <div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk5_1" name="chk_5">
+                                        <label for="chk5_1"><span></span>요실금팬티</label>
+                                    </div>
+                                    <div class="checks">
+                                        <input type="checkbox" id="chk6_1" name="chk_6">
+                                        <label for="chk6_1"><span></span>스마트기저귀</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right_write">
+                            
+                            <div class="title_box">
+                                <h3 class="con_title">총 소변횟수</h3>
+                                <input type="text" class="input_custom w10">
+
+                                <div class="title_right_btn">
+                                    <a href="#a" class="btn_type04">삭제</a>
+                                    <a href="#a" class="btn_type04">전체 삭제</a>
+                                </div>
+                            </div>
+
+                            <div class="table_type02">
+                                <table>
+                                    <caption>배뇨시간,배뇨,유형,교환여부</caption>
+                                    <colgroup>
+                                        <col width="10%">
+                                        <col width="15%">
+                                        <col width="15%">
+                                        <col width="15%">
+                                        <col width="15%">
+                                        <col width="15%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk1_1" name="tbl_chk1">
+                                                    <label for="chk1_1"><span></span></label>
+                                                </div>
+                                            </th>
+                                            <th scope="col">시간</th>
+                                            <th scope="col">배뇨</th>
+                                            <th scope="col">유형</th>
+                                            <th scope="col" colspan="2">교환여부</th>
+                                            <th scope="col">교환자</th>
+                                        </tr> 
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>00시 25분</td>
+                                            <td>정량</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>01시 45분</td>
+                                            <td>배뇨없음</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>00시 25분</td>
+                                            <td>정량</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>00시 25분</td>
+                                            <td>정량</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>00시 25분</td>
+                                            <td>정량</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>00시 25분</td>
+                                            <td>정량</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checks_type3">
+                                                    <input type="checkbox" id="chk2_1" name="tbl_chk2">
+                                                    <label for="chk2_1"><span></span></label>
+                                                </div>
+                                            </td>
+                                            <td>00시 25분</td>
+                                            <td>정량</td>
+                                            <td>기저귀</td>
+                                            <td>교환</td>
+                                            <td>일자기저귀</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    
+
+
+                </div>
+
+                <!-- ppt2. 모달 팝업창 추가하였습니다. -->
+                <div class="common_popup new_pop">
+                    <h3 class="new_pop_title">양체크</h3>
+                    <div class="layer_cont">
+                        <button type="button" class="common_close"><span class="blind">닫기</span></button>
+                        <input type="text" class="direct_write" placeholder="직접입력">
+                        <div class="selbtn_wrap">
+                            <button type="button" class="sel_btn">배뇨없음</button>
+                            <button type="button" class="sel_btn">소량</button>
+                            <button type="button" class="sel_btn">정량</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                            <button type="button" class="sel_btn">화장실</button>
+                        </div>
+                    </div>
+                </div>
+                <!--//팝업창 -->
+            </div>
+        </div>
+    </div>
+       
+
+
+
+    <script>
+        $('#layer_pop, #layer_pop2').click(function(){
+            $('.search_pop').toggle();
+        });
+        
+        $('.search_close').click(function(){
+            $('.search_pop').hide();
+        });
+
+        $('.date_checks .more_btn').click(function(){
+            $(this).next().toggleClass("on");
+            $(this).toggleClass("on");
+        });
+
+
+
+
+    </script>
+</body>
+</html>

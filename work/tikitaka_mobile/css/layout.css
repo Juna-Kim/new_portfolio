@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 화면낭독기 사용자용 */
+#hd_login_msg {position:absolute;top:0;left:0;font-size:0;line-height:0;overflow:hidden}
+.msg_sound_only, .sound_only {display:inline-block !important;position:absolute;top:0;left:0;margin:0 !important;padding:0 !important;font-size:0 !important;line-height:0 !important;border:0 !important;overflow:hidden !important}
+
+/* 본문 바로가기 */
+#skip_to_container a {z-index:100000; position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden}
+#skip_to_container a:focus, #skip_to_container a:active {width:100%;height:75px;background:#21272e;color:#fff;font-size:2em;font-weight:bold;text-align:center;text-decoration:none;line-height:3.3em}
+
+#container {position: relative; z-index: 9; width: 100%; margin: -4px 0 0 0; padding: 0; min-height: 300px; padding-top:0px; }
+
+/* header */
+#hd { width: 100%; margin: 0; padding: 0 0 4px 0; position: relative; z-index: 10; height:60px; background: #FFF;border-bottom:1px solid #12439a;}
+#hd.pop { background: #01b0c3; padding: 0;}
+#hd.npop { background: #313a4b; padding: 0;}
+#hd.pop .page-title { background: none;}
+#hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#hd .top { position: relative; margin: 0px 15px; padding: 13px 0px; }
+#hd .top .logo img { width: 100px; }
+#hd .top .logo { float: left; position: absolute; width: 100%; text-align: center;  z-index: 9;}
+#hd .top .tnb { position: relative; z-index:10; float: right; line-height: 60px;  }
+#hd .top .tnb > a { display: inline-block; float:left; margin: 0 4px; font-size: 16px; color: #737373;}
+
+#hd .top .tnb > a.login { display: block; position:static !important;background: url(../images/common/btn-mobi-login.png) no-repeat center 2px; background-size: 32px 32px; line-height: 35px; width: 35px; height:35px; }
+#hd .top .tnb > a.logout { display: block; background: url(../images/common/logout_btn.png) no-repeat center 2px; background-size: 32px 32px; line-height: 35px; width: 35px; height:35px; }
+#hd .top .tnb > a.search { display: block; margin-right: 0px; background: url(../images/common/btn-mobi-search.png) no-repeat center 2px; background-size:  32px 32px; line-height: 35px; width: 35px; height:35px; }	
+#hd .top .btn-mobi { display: inline-block; float: left; margin-top: 9px; width: 18px; height: 16px; position: relative; z-index: 10; text-indent: -9999px; background: url(../images/common/btn-mobi-menu.png) no-repeat; background-size: cover;}
+#gnb { display: none; }
+
+/* footer */
+#ft { width: 100%; margin: 0; background: #4563a1; clear: both;}
+#ft .footer { position: relative; text-align: center;}
+#ft .fnb a {  margin-left: -4px; display: inline-block; font-size: 11px; color: #cbcbcb; line-height: 20px; border-left: none; background: url(../../../images/mobile/nhi/common/line-bg.png) no-repeat; padding: 0px 10px;  padding-bottom: 10px; border-bottom: 1px solid #8b8b8b;  }
+#ft .fnb a:first-child { padding-left: 10px; border-left: 0px; background: none; }
+#ft .footer p {  margin: 10px 20px 10px 10px; font-size: 12px; color: #fff; opacity: 1.3; line-height:1.2; text-align:left;}
+#ft .footer p.copy {padding-bottom: 20px;}
+#ft .footer .ft-btn { display: none; }
+#ft .ft-btn2 { margin-bottom:20px;}
+#ft .ft-btn2 > ul { overflow: hidden;background:#4563a1;border-bottom:1px solid #5971a5; }
+#ft .ft-btn2 > ul > li { float: left; width: 50%; line-height: 40px; border-top: 1px solid #5971a5; padding-left: 20px; text-align: left;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#ft .ft-btn2 > ul > li:first-child { border-right: 1px solid #5971a5;}
+#ft .ft-btn2 > ul > li > a { display: block; line-height: 40px; font-size: 14px;  color: #fff; }
+#ft .ft-btn2 > ul > li.wp100 > a > span { display: block; line-height: 40px; margin-right:20px; background: url(../../../images/mobile/nhi/sub/btn/btn-arr-open.png) no-repeat center right; background-size: 13px 8px; }
+.go-web { display: none; position: absolute; left: 0px; width: 100%; height: 90px; overflow-y: scroll; background: #fff; background:#f9f9f9; border: 1px solid #ddd; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index:1;}
+.go-web > ul > li { line-height: 20px; }
+.go-web > ul > li > a {font-size:14px;padding-left:5px;}
+.go-web > ul > li > a:before {content:"ㆍ";color:#bbb;width:5px;}
+
