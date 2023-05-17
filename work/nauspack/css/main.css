@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+#fullpage {font-family:'Roboto', 'Noto Sans KR',sans-serif;color:#222;min-width:1200px;}
+
+.section {position:relative;height:100vh; }
+.section h1.logo {position:absolute;top:60px;left:160px;z-index:10}
+.section .cont_box {position:absolute;top:50%;transform:translateY(-50%);padding-left:160px;}
+.section .cont_box .title h2 {font-size:50px; }
+.section .cont_box .title p {font-size:20px;padding-top:12px;font-family:'Noto Sans KR',sans-serif;}
+.section .bottom_in_txt {/* -webkit-animation-name: slideInUp; animation-name: slideInUp; animation-fill-mode: both; */ opacity: 0;}
+.section.active .bottom_in_txt {-webkit-animation-name: slideInUp; animation-name: slideInUp; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+.section.active .bottom_in_txt.delay01 {   -webkit-animation-delay: 1s; animation-delay: 1s; }
+.section.active .bottom_in_txt.delay02 {   -webkit-animation-delay: 2s; animation-delay: 2s; }
+.section.active .bottom_in_txt.delay03 {   -webkit-animation-delay: 3s; animation-delay: 3s; }
+
+.cont01 {background:url('../img/company01_bg.jpg') no-repeat center;background-size:cover;color:#fff;}
+
+.cont02 {background:url('../img/company02_bg.jpg') no-repeat center;background-size:cover;color:#fff;}
+.cont02 .cont_box .package_wrap {padding-top:77px;}
+.cont02 .cont_box .package_wrap ul li {display:inline-block;margin-right:110px;}
+.cont02 .cont_box .package_wrap ul li p.ico {font-size:17px;font-weight:bold;padding-top:50px;margin-bottom:15px;}
+.cont02 .cont_box .package_wrap ul li:nth-child(1) p.ico {background:url('../img/company02_ico1.png') no-repeat left top;}
+.cont02 .cont_box .package_wrap ul li:nth-child(2) p.ico {background:url('../img/company02_ico2.png') no-repeat left top;}
+.cont02 .cont_box .package_wrap ul li:nth-child(3) p.ico {background:url('../img/company02_ico3.png') no-repeat left top;}
+.cont02 .cont_box .package_wrap ul li p.number-diy {font-size:40px;font-weight:bold;}
+.cont02 .cont_box .package_wrap ul li p.text {font-size:14px;padding-top:10px;}
+
+.cont03 {background:#ebebeb;overflow:hidden;}
+.cont03 .cont_box {padding:0;bottom:50px;top:auto;transform:translate(0)}
+.cont03 .cont_box .title {padding-left:160px;}
+.cont03_rolling {width:100%;overflow:hidden;padding-top:45px;}
+.cont03_rolling .rolling_bg {position:relative;width:2964px;height:356px;overflow:hidden;padding-left:160px;}
+.cont03_rolling .rolling_bg:before,
+.cont03_rolling .rolling_bg:after {content: '';width:2964px;height:356px;display:block;opacity:0.5;transition:all 0.35s;background-image:url('../img/company03_scrollimg.png');background-repeat:no-repeat;background-position:50% 50%;background-size:2964px 356px;}
+.section.active .cont03_rolling .rolling_bg:before,
+.section.active .cont03_rolling .rolling_bg:after {content: '';width:2964px;height:356px;background-image:url('../img/company03_scrollimg.png');background-repeat: no-repeat;background-position:50% 50%;background-size:2964px 356px;display:block;overflow:hidden;position:absolute;opacity:1; transition: all 0.35s;
+-webkit-animation-duration: 40s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: .3s;
+animation-duration: 40s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-delay: .3s;
+}
+
+.section.active .cont03_rolling .rolling_bg:before {-webkit-animation-name:slideHorizontal;animation-name:slideHorizontal;}
+.section.active .cont03_rolling .rolling_bg:after {-webkit-animation-name:slideHorizontalAfter;animation-name:slideHorizontalAfter;}
+
+@-webkit-keyframes slideHorizontal {
+	0% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	50% {
+		-webkit-transform: translate3d(-2964px, 0, 0);
+		transform: translate3d(-2964px, 0, 0);
+	}
+	50.001% {
+		-webkit-transform: translate3d(2964px, 0, 0);
+		transform: translate3d(2964px, 0, 0);
+	}
+	to {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+@-webkit-keyframes slideHorizontalAfter {
+	0% {
+		-webkit-transform: translate3d(2964px, 0, 0);
+		transform: translate3d(2964px, 0, 0);
+	}
+	50% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	to {
+		-webkit-transform: translate3d(-2964px, 0, 0);
+		transform: translate3d(-2964px, 0, 0);
+	}
+}
+
+.cont04 {background:url('../img/company04_bg.jpg') no-repeat center;background-size:cover;color:#fff;}
+.cont04_rolling {width:100%;overflow:hidden; overflow: hidden; }
+.cont04_rolling .rolling_bg {position:absolute;right:50px;top:0; width: 750px; height: 1586px; overflow: hidden; padding-top:140px; }
+.cont04_rolling .rolling_bg:before,
+.cont04_rolling .rolling_bg:after {content: ''; width: 750px; height: 1586px; display: block; opacity: 0.5; transition: all 0.35s; background-image: url('../img/company04_scrollimg.png'); background-repeat: no-repeat; background-position: 50% 50%; background-size: 750px 1586px;}
+.section.active .cont04_rolling .rolling_bg:before,
+.section.active .cont04_rolling .rolling_bg:after {content: ''; width: 750px; height: 1586px; background-image: url('../img/company04_scrollimg.png'); background-repeat: no-repeat; background-position: 50% 50%; background-size: 750px 1586px; display: block; overflow: hidden; position: absolute;opacity: 1; transition: all 0.35s;
+	-webkit-animation-duration: 40s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: .3s;
+
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: .3s;
+}
+
+.section.active .cont04_rolling .rolling_bg:before {-webkit-animation-name: slideVertical; animation-name: slideVertical;}
+.section.active .cont04_rolling .rolling_bg:after {-webkit-animation-name: slideVerticalAfter; animation-name: slideVerticalAfter;}
+
+@-webkit-keyframes slideVertical {
+	0% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	50% {
+		-webkit-transform: translate3d(0, -1586px, 0);
+		transform: translate3d(0, -1586px, 0);
+	}
+	50.001% {
+		-webkit-transform: translate3d(0, 1586px, 0);
+		transform: translate3d(0, 1586px, 0);
+	}
+	to {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+@-webkit-keyframes slideVerticalAfter {
+	0% {
+		-webkit-transform: translate3d(0, 1586px, 0);
+		transform: translate3d(0, 1586px, 0);
+	}
+	50% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	to {
+		-webkit-transform: translate3d(0, -1586px, 0);
+		transform: translate3d(0, -1586px, 0);
+	}
+}
+
+@keyframes slideInUp {
+	0% {
+		-webkit-transform: translateY(150%);
+		transform: translateY(150%);
+		visibility: visible;
+		opacity:0;
+	}
+	40% {
+		/*opacity:0.5;*/
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity:1;
+	}
+}
+
+.cont05 {background:url('../img/company05_bg.jpg') no-repeat center;background-size:cover;}
+.cont05 .cont_box .btn_link {display:inline-block;width:160px;height:44px;line-height:44px;padding-left:20px;border:1px solid #222;font-size:16px;box-sizing:border-box;background:url('../img/company05_ico_right.png') no-repeat center right 19px;margin-top:44px;}
+
+.cont06 {position:relative;background:#ebebeb;}
+.cont06 .cont_box {width:100%;box-sizing:border-box;}
+.cont06 .swiper_wrap {margin-top:55px;}
+.cont06 .cont06_swiper {padding-bottom:56px;}
+.cont06 .cont06_swiper .swiper-slide .img {margin-right:35px;}
+.cont06 .cont06_swiper .swiper-slide .img img {width:100%}
+.cont06 .cont06_swiper .swiper-slide .img .thumb_big {display:none;}
+.cont06 .cont06_swiper .swiper-pagination-progressbar {height:6px;background:#bcbcbc;top:auto;bottom:0}
+.cont06 .cont06_swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background:#222;}
+
+.pop_wrap {position:relative;width:100%;height:100%;z-index:10}
+.pop_wrap .dim {width:100%;height:100%;background:rgba(0,0,0,.8);}
+.pop_wrap .pop_cont {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);}
+.pop_wrap .pop_cont .close {position:absolute;right:0;top:-48px;background:none;border:0;}
+
+.cont07 {background:url('../img/company07_bg.jpg') no-repeat center;background-size:cover;}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {background:#fff !important;}

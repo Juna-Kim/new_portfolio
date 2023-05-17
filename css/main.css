@@ -150,6 +150,9 @@ html {font-size:10px;}
 .project .work .work_info .info_list dl dd .color._nurse em:nth-child(3) {background:#9a479d;}
 .project .work .work_info .info_list dl dd .color._company em:nth-child(1) {background:#ed4724;}
 .project .work .work_info .info_list dl dd .color._company em:nth-child(2) {background:#000;}
+
+.project .work .work_info .info_list dl dd .color._nauspack em:nth-child(1) {background:#222;}
+.project .work .work_info .info_list dl dd .color._nauspack em:nth-child(2) {background:#ebebeb;}
 .project .work .work_info .info_list dl dd .color._krb em:nth-child(1) {background:#0071be;}
 .project .work .work_info .info_list dl dd .color._krb em:nth-child(2) {background:#5f0080;}
 .project .work .work_info .info_list dl dd .color._krb em:nth-child(3) {background:#e5004e;}
